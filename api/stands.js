@@ -16,12 +16,12 @@ async function fetchModalData() {
 // Generate modal HTML structure
 function createModal(modal) {
 	return`
-	<div class="modal micromodal-slide" id="${modal.ID}">
+	<div class="modal micromodal-slide" id="${modal.ID}" aria-hidden="true">
 		<div class="modal__overlay" tabindex="-${modal.ID}" data-micromodal-close>
-			<div class="modal__container" role="dialog">
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="${modal.ID}-title">
 				<header class="modal__header">
-					<h2 class="modal__title ${modal.availability}">Stand No. ${modal.ID}</h2>
-					<button class="modal__close" data-micromodal-close></button>
+					<h2 class="modal__title ${modal.availability}" id="${modal.ID}-title">Stand No. ${modal.ID}</h2>
+					<button aria-label="Clode Modal" class="modal__close" data-micromodal-close></button>
 				</header>
 				<main class="modal__content">
 					<h4>Stand Size: ${modal.sqm}</h4>
