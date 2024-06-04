@@ -1,0 +1,89 @@
+.custom-controls {
+	display: block;
+    width: 30px;
+    height: 110px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+
+	// Icon Styles & Size
+	>span {
+		border-radius: 50%;
+		background-color: var(--bg-black);
+		color: var(--bg-white);
+		cursor: pointer;
+		font-size: 18px;
+		line-height: 30px;
+		width: 30px;
+		height: 30px;
+		text-align: center;
+		transition: var(--transition);
+
+		&:hover {
+			background-color: var(--bg-available);
+		}
+	}
+
+	// Rotate Icons
+	.icon-arrow.up {
+		transform: rotate(90deg);
+	}
+	.icon-arrow.right {
+		transform: rotate(180deg);
+	}
+	.icon-arrow.down {
+		transform: rotate(270deg);
+	}
+	.icon-arrow.left {
+		// transform: rotate(270deg);
+	}
+}
+
+// Position Icons
+#pan-left {
+	position: absolute;
+	right: 110px;
+	bottom: 40px;
+}
+
+#pan-up {
+	position: absolute;
+	right: 80px;
+	bottom: 70px;
+}
+
+#pan-right {
+	position: absolute;
+	right: 50px;
+	bottom: 40px;
+}
+
+#pan-down {
+	position: absolute;
+	right: 80px;
+	bottom: 10px;
+}
+
+#zoom-in {
+	position: absolute;
+	right: 0px;
+	bottom: 80px;
+}
+
+#zoom-out {
+	position: absolute;
+	right: 0px;
+	bottom: 40px;
+}
+
+#info {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+#reset {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}

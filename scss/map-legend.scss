@@ -1,0 +1,56 @@
+// 
+// Info Panel
+// 
+.map-legend {
+	/* display: flex; */
+    flex-direction: column;
+    background-color: var(--bg-white);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+	h2 {
+		margin: 15px;
+	}
+
+	.map-legend__key {
+		display: flex;
+		gap: 10px;
+		margin: 10px;
+
+		h4 {
+			margin: 6px 10px 0 0;
+		}
+	}
+
+	.map-legend__swatch {
+		border-radius: 50%;
+		height: 30px;
+		width: 30px;
+
+		&.available {
+			background-color: var(--bg-available);
+		}
+
+		&.sold {
+			background-color: var(--bg-sold);
+		}
+
+		&.reserved {
+			background-color: var(--bg-reserved);
+		}
+
+		&.amenity {
+			background-color: var(--bg-amenity);
+		}
+
+		&.buffer-open-space {
+			background-color: var(--bg-lawn);
+		}
+		&.roads {
+			background-color: var(--bg-grey);
+		}
+	}
+}

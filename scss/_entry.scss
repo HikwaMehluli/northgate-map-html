@@ -1,0 +1,87 @@
+:root {
+	// General Colors
+	--bg-color: #d8e1e7;
+	--bg-blue: #1b3664;
+	--bg-black: #222222;
+	--bg-white: #ffffff;
+	--bg-grey: #8a8c9c;
+
+	// SVG Map
+	--bg-available: #13a0ca;
+	--bg-sold: #d05865;
+	--bg-reserved: #902d3c;
+	--bg-lawn: #749043;
+	--bg-amenity: #fabc43;
+	--bg-future: #b9c7b7;
+
+	// Other Variables
+	--transition: all .5s;
+}
+
+body {
+	background-color: var(--bg-white);
+	margin: 0 auto;
+	font-family: "Montserrat", sans-serif;
+	width: 95%;
+	max-width: 1200px;
+}
+
+@font-face {
+	font-family: 'interactive-map';
+	src: url('../font/interactive-map.eot?50611948');
+	src: url('../font/interactive-map.eot?50611948#iefix') format('embedded-opentype'),
+		 url('../font/interactive-map.woff2?50611948') format('woff2'),
+		 url('../font/interactive-map.woff?50611948') format('woff'),
+		 url('../font/interactive-map.ttf?50611948') format('truetype'),
+		 url('../font/interactive-map.svg?50611948#interactive-map') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	font-family: "interactive-map";
+	font-style: normal;
+	font-weight: normal;
+	speak: never;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1em;
+	margin-left: .2em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// Render Icons & Color
+.icon-minus:before {
+	content: '\e800';
+	color: var(--color-white);
+}
+.icon-plus:before {
+	content: '\e801';
+	color: var(--color-white);
+}
+.icon-arrow:before {
+	content: '\e802';
+	color: var(--color-white);
+}
+.icon-reset:before {
+	content: '\e803';
+	color: var(--color-white);
+}
+.icon-info:before {
+	content: '\e804';
+	color: var(--color-white);
+}
+
+// Import SCSS
+@import './custom-controls';
+@import './map-legend';
+@import './micromodal';
+@import './svg-map';
+@import './tippy';

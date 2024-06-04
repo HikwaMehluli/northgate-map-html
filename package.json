@@ -1,0 +1,21 @@
+{
+	"name": "nortgate",
+	"version": "1.0.0",
+	"description": "Northgate Interactive Maps for buyers system by Mehluli Hikwa",
+	"author": "Mehluli Hikwa",
+	"scripts": {
+		"css-prod": "sass --no-source-map --watch scss/_entry.scss:css/app.css --style compressed",
+		"css-dev": "sass --no-source-map --watch scss/_entry.scss:css/app.css",
+		"js-prod": "webpack --mode=production --watch",
+		"js-dev": "webpack --mode=development --watch"
+	},
+	"devDependencies": {
+		"sass": "^1.71.1",
+		"webpack": "^5.90.3",
+		"webpack-cli": "^5.1.4"
+	},
+	"dependencies": {
+		"micromodal": "^0.4.10",
+		"tippy.js": "^6.3.7"
+	}
+}

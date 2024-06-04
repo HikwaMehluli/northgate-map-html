@@ -1,0 +1,68 @@
+[
+    {
+        "ID": 2536,
+        "sqm": 800,
+        "description": "A spacious stand located in a prime area with excellent amenities nearby.",
+        "availability": "available"
+    },
+    {
+        "ID": 2537,
+        "sqm": 600,
+        "description": "A cozy stand with a beautiful view of the mountains.",
+        "availability": "reserved"
+    },
+    {
+        "ID": 2538,
+        "sqm": 1000,
+        "description": "A large stand suitable for commercial development.",
+        "availability": "sold"
+    },
+    {
+        "ID": 2539,
+        "sqm": 450,
+        "description": "A compact stand perfect for a small family home.",
+        "availability": "available"
+    },
+    {
+        "ID": 2540,
+        "sqm": 1200,
+        "description": "An expansive stand with potential for various development projects.",
+        "availability": "reserved"
+    },
+    {
+        "ID": 2541,
+        "sqm": 700,
+        "description": "A stand with a picturesque view of the lake.",
+        "availability": "available"
+    },
+    {
+        "ID": 2542,
+        "sqm": 850,
+        "description": "A stand nestled among lush greenery, offering tranquility and privacy.",
+        "availability": "available"
+    },
+    {
+        "ID": 2543,
+        "sqm": 500,
+        "description": "A stand with easy access to transportation and local amenities.",
+        "availability": "reserved"
+    },
+    {
+        "ID": 2544,
+        "sqm": 950,
+        "description": "A stand located in a gated community with 24/7 security.",
+        "availability": "available"
+    },
+    {
+        "ID": 2545,
+        "sqm": 1100,
+        "description": "A stand with breathtaking views, ideal for building a dream home.",
+        "availability": "sold"
+    },
+    {
+        "ID": 2546,
+        "sqm": 550,
+        "description": "A stand in a vibrant neighborhood, perfect for young professionals.",
+        "availability": "available"
+    }
+]

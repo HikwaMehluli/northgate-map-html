@@ -1,0 +1,110 @@
+.map-container {
+	background-color: var(--bg-color);
+	border: 2px solid var(--bg-black);
+	margin: 20px 0 20px 0;
+	position: relative;
+	height: 95vh;
+	width: 100%;
+}
+
+svg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#border {
+	fill: none;
+	stroke: var(--bg-black);
+	stroke-width: 4px;
+	stroke-dasharray: 8 4;
+}
+
+.roads,
+#road {
+	fill: var(--bg-grey);
+}
+
+.amenity-area,
+#amenity-area {
+	fill: var(--bg-amenity);
+}
+
+#text {
+	fill: var(--bg-black);
+	stroke-dasharray: 0;
+}
+
+#tanks,
+#open-space,
+#area {
+	fill: var(--bg-white);
+	stroke: var(--bg-black);
+}
+
+#Buffer_Areas_and_Open_Spaces {
+	fill: var(--bg-lawn);
+	stroke: var(--bg-black);
+	stroke-dasharray: 0;
+
+	&:hover {
+		fill: var(--bg-lawn);
+	}
+}
+
+
+
+// 
+// Availablity Styling
+//
+#text,
+.text {
+	fill: var(--bg-black);
+}
+
+.available,
+.sold,
+.reserved {
+	stroke: var(--bg-black);
+	stroke-dasharray: 0;
+	transition: var(--transition);
+
+	&:hover {
+		fill: var(--bg-black);
+		cursor: pointer;
+
+		// ~.text
+		~#text,
+		~.text {
+			fill: var(--bg-white);
+		}
+	}
+}
+
+.available {
+	fill: var(--bg-available);
+}
+
+.sold {
+	fill: var(--bg-sold);
+}
+
+.reserved {
+	fill: var(--bg-reserved);
+}
+
+.sold~#text,
+.sold~.text,
+.reserved~#text,
+.reserved~.text {
+	fill: var(--bg-white);
+}
+
+#bg-future,
+.bg-future {
+	fill: var(--bg-future);
+	stroke: var(--bg-black);
+	stroke-dasharray: 0;
+}
