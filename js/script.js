@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				// Variables
 				// 
 				var instance = options.instance,
-					initialScale = 3, // Initial zoom level = 2
+					initialScale = 2, // Initial zoom level = 2
 					pannedX = 0,
 					pannedY = 0
 					
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				instance.zoom(initialScale);
 
 				// set initial pan area
-				instance.pan({x: 200, y: -1750});
+				// instance.pan({x: 200, y: -1750});
 
 
 				// 
