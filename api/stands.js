@@ -16,19 +16,19 @@ async function fetchModalData() {
 // Generate modal HTML structure
 function createModal(modal) {
 	return`
-	<div class="modal micromodal-slide" id="${modal.ID}" aria-hidden="true">
+	<div class="modal micromodal-slide" id="${modal.ID}">
 		<div class="modal__overlay" tabindex="-${modal.ID}" data-micromodal-close>
-			<div class="modal__container" role="dialog" aria-modal="true">
+			<div class="modal__container" role="dialog">
 				<header class="modal__header">
 					<h2 class="modal__title ${modal.availability}">Stand No. ${modal.ID}</h2>
-					<button aria-lable="Clode Modal" class="modal__close" data-micromodal-close></button>
+					<button class="modal__close" data-micromodal-close></button>
 				</header>
 				<main class="modal__content">
 					<h4>Stand Size: ${modal.sqm}</h4>
 					<p>${modal.description}</p>
 				</main>
 				<footer class="modal__footer">
-					<a class="modal__btn" href="https://thatafro.netlify.app" target="_blank">Buy Stand</a>
+					<a class="modal__btn" href="https://staging.northgate.co.zw">Buy Stand</a>
 					<a class="modal__btn" data-micromodal-close>Close</a>
 				</footer>
 			</div>
