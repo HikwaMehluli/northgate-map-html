@@ -4,8 +4,6 @@ import svgPanZoom from'./svg-pan-zoom.min.js';
 import './hammer.js';
 
 window.addEventListener("load", function () {
-// window.addEventListener("load", (event) => {
-// window.onload = (event) => {
 // document.addEventListener("DOMContentLoaded", function () {
 	// 
 	// TippyJS, Tooltip Options - https://atomiks.github.io/tippyjs/v6/customization/
