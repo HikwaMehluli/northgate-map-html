@@ -3,7 +3,10 @@ import MicroModal from 'micromodal';
 import svgPanZoom from'./svg-pan-zoom.min.js';
 import './hammer.js';
 
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
+// window.addEventListener("load", (event) => {
+// window.onload = (event) => {
+// document.addEventListener("DOMContentLoaded", function () {
 	// 
 	// TippyJS, Tooltip Options - https://atomiks.github.io/tippyjs/v6/customization/
 	// 
@@ -49,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				// Variables
 				// 
 				var instance = options.instance,
-					initialScale = 2, // Initial zoom level = 2
+					initialScale = 3, // Initial zoom level = 2
 					pannedX = 0,
 					pannedY = 0
 					

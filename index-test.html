@@ -84,8 +84,18 @@
             </span>
         </div>
 	</div>
-	<div id="modal-container"><div>
+	<div id="modal-container"></div>
 
 	<script src="./api/stands.js"></script>
+	<script>
+		function showLegend() {
+			const legend = document.getElementById('map-legend');
+			if (legend.style.display === 'none' || legend.style.display === '') {
+				legend.style.display = 'block';
+			} else {
+				legend.style.display = 'none';
+			}
+		}
+	</script>
 </body>
 </html>
