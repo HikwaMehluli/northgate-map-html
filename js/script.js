@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				instance.zoom(initialScale);
 
 				// set initial pan area
-				// instance.pan({x: 200, y: -1750});
+				instance.pan({x: 200, y: -1750});
 
 
 				// 
