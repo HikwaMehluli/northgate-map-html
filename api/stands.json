@@ -3,13 +3,13 @@
         "ID": 2536,
         "sqm": 800,
         "description": "A spacious stand located in a prime area with excellent amenities nearby.",
-        "availability": "available"
+        "availability": "reserved"
     },
     {
         "ID": 2537,
         "sqm": 600,
         "description": "A cozy stand with a beautiful view of the mountains.",
-        "availability": "reserved"
+        "availability": "available"
     },
     {
         "ID": 2538,
@@ -62,7 +62,7 @@
     {
         "ID": 2546,
         "sqm": 550,
-        "description": "A stand in a vibrant neighborhood, perfect for young professionals.",
+        "description": "A stand in a vibrant neighborhood, perfect for young professionals. Word Mehluli",
         "availability": "available"
     }
 ]
