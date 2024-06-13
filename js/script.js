@@ -106,10 +106,10 @@ window.addEventListener("load", function () {
 				// Enable pinch
 				this.hammer.get('pinch').set({ enable: true })
 
-				// Handle double tap
-				this.hammer.on('doubletap', function (ev) {
-					instance.zoomIn()
-				})
+				// // Handle double tap
+				// this.hammer.on('doubletap', function (ev) {
+				// 	instance.zoomIn()
+				// })
 
 				// Handle pan
 				this.hammer.on('panstart panmove', function (ev) {
