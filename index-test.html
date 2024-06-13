@@ -23,68 +23,636 @@
 
 		<svg id="northgate-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3908.52 4931.55">
 			<defs>
-			  <style>
-				.cls-1 {
-				  fill: #8a8c9c;
-				  stroke-miterlimit: 10;
-				}
-		  
-				.cls-1, .cls-2, .available {
-				  stroke: #000;
-				}
-		  
-				.cls-2 {
-				  fill: #749043;
-				  stroke-dasharray: 16 8;
-				}
-		  
-				.available {
-				  fill: #13a0ca;
-				}
-		  
-				.text {
-				  font-size: 14px;
-				  font-family: MyriadPro-Semibold, Myriad Pro;
-				  font-weight: 600;
-				}
-			  </style>
+				<style>
+					.cls-1 {
+						fill: #8a8c9c;
+					}
+
+					.cls-2 {
+						fill: #749043;
+					}
+
+					.available,
+					.cls-13,
+					.cls-14,
+					.cls-15,
+					.cls-16,
+					.cls-17,
+					.cls-18,
+					.cls-19,
+					.cls-2,
+					.cls-3,
+					.amenity {
+						stroke: #000;
+					}
+
+					.cls-3 {
+						fill: #fff;
+					}
+
+					.amenity {
+						fill: #fabc43;
+					}
+
+					.cls-5 {
+						font-size: 18px;
+						font-family: MyriadPro-Regular, Myriad Pro;
+					}
+
+					.cls-6 {
+						letter-spacing: -0.06em;
+					}
+
+					.cls-7 {
+						letter-spacing: -0.08em;
+					}
+
+					.cls-8 {
+						letter-spacing: 0.02em;
+					}
+
+					.cls-9 {
+						letter-spacing: -0.01em;
+					}
+
+					.cls-10 {
+						letter-spacing: -0.01em;
+					}
+
+					.available {
+						fill: #13a0ca;
+					}
+
+					.text {
+						font-size: 14px;
+						font-family: MyriadPro-Semibold, Myriad Pro;
+						font-weight: 600;
+					}
+
+					.cls-13,
+					.cls-14,
+					.cls-15,
+					.cls-16,
+					.cls-17,
+					.cls-18,
+					.cls-19 {
+						fill: none;
+						stroke-miterlimit: 10;
+					}
+
+					.cls-14 {
+						stroke-dasharray: 16.12 8.06;
+					}
+
+					.cls-15 {
+						stroke-dasharray: 16 8;
+					}
+
+					.cls-16 {
+						stroke-dasharray: 16.2 8.1;
+					}
+
+					.cls-17 {
+						stroke-dasharray: 16.04 8.02;
+					}
+
+					.cls-18 {
+						stroke-dasharray: 16.09 8.04;
+					}
+
+					.cls-19 {
+						stroke-dasharray: 15.98 7.99;
+					}
+				</style>
 			</defs>
-			<polygon id="roads" class="cls-1" points="0.56 4785.99 9.66 4805.19 54.63 4825.14 479.05 4881.48 847.38 4931 1028.77 4429.27 1083.34 4278.2 1494.12 3784.55 1620.44 3629.94 1642.67 3629.94 2249.49 3750.2 2550.63 3809.31 2789.62 3139.33 2932.1 2737.14 3076.61 2332.93 3218.59 1932.26 3354.5 1551.8 3497.49 1149.1 3648.56 725.19 3791.55 325.52 3907.76 0.64 3248.39 114.32 2576.39 231.04 1804.86 2397.1 1353.15 2807.88 1015.64 3224.72 339.09 4060.43 12.69 4764.77 0.56 4785.99"/>
+			<polygon id="roads" class="cls-1"
+				points="0.56 4785.99 9.66 4805.19 54.63 4825.14 479.05 4881.48 847.38 4931 1028.77 4429.27 1083.34 4278.2 1494.12 3784.55 1620.44 3629.94 1642.67 3629.94 2249.49 3750.2 2550.63 3809.31 2789.62 3139.33 2932.1 2737.14 3076.61 2332.93 3218.59 1932.26 3354.5 1551.8 3497.49 1149.1 3648.56 725.19 3791.55 325.52 3907.76 0.64 3248.39 114.32 2576.39 231.04 1804.86 2397.1 1353.15 2807.88 1015.64 3224.72 339.09 4060.43 12.69 4764.77 0.56 4785.99" />
 			<g id="buffer-area">
-			  <polygon id="buffer-area-2" data-tippy-content="buffer-area" class="cls-2" points="102.88 4817.69 78.46 4828.31 54.63 4825.14 9.66 4805.19 0.56 4785.99 12.69 4764.77 339.09 4060.43 1353.15 2807.88 1420.29 2859.86 1421.81 2879.19 419.68 4116.26 366.06 4163.82 102.88 4817.69"/>
-			  <polygon id="buffer-area-3" data-tippy-content="buffer-area" class="cls-2" points="128.65 4816.55 128.65 4799.5 199.51 4649.82 261.28 4678.24 403.76 4697.19 383.3 4858.62 356.75 4865.25 145.84 4837.25 128.65 4821.86 128.65 4816.55"/>
-			  <polygon id="buffer-area-4" data-tippy-content="buffer-area" class="cls-2" points="402.63 4861.02 402.63 4853.31 824.59 4909.97 822.5 4913.56 806.19 4925.46 423.85 4874.15 402.63 4861.02"/>
+				<polygon id="buffer-area-2" data-name="buffer-area" class="cls-2"
+					points="102.88 4817.69 78.46 4828.31 54.63 4825.14 9.66 4805.19 0.56 4785.99 12.69 4764.77 339.09 4060.43 1353.15 2807.88 1420.29 2859.86 1421.81 2879.19 419.68 4116.26 102.88 4817.69" />
+				<polygon id="buffer-area-3" data-name="buffer-area" class="cls-2"
+					points="402.63 4861.02 402.63 4853.31 824.59 4909.97 822.5 4913.56 806.19 4925.46 423.85 4874.15 402.63 4861.02" />
+				<polygon id="buffer-area-4" data-name="buffer-area" class="cls-2"
+					points="151.64 4838.02 128.65 4821.86 383.3 4858.62 356.32 4865.19 151.64 4838.02" />
 			</g>
-			<g data-micromodal-trigger="2536" data-tippy-content="2536">
-			  <polygon id="bg" class="available" points="824.59 4909.97 831.03 4905.8 844.86 4866.2 838.23 4850.66 810.94 4840.43 799.76 4840.43 791.62 4906.74 824.59 4909.97"/>
-			  <text id="text" class="text" transform="translate(817.59 4894.91) rotate(-82.44)">2536</text>
+			<g id="water-reservoirs">
+				<polygon id="reservoirs" class="cls-3"
+					points="128.65 4816.55 128.65 4799.5 199.51 4649.82 261.28 4678.24 403.76 4697.19 383.3 4858.62 128.65 4821.86 128.65 4816.55" />
+				<polygon id="amenity" class="amenity"
+					points="133.7 4810.49 203.17 4659.92 259.51 4685.94 395.93 4703.38 377.24 4844.09 133.7 4810.49" />
+				<circle id="reservoirs-2" data-name="reservoirs" class="cls-3" cx="226" cy="4715.31" r="21.79" />
+				<circle id="reservoirs-3" data-name="reservoirs" class="cls-3" cx="301.32" cy="4726.24" r="21.79" />
+				<circle id="reservoirs-4" data-name="reservoirs" class="cls-3" cx="301.32" cy="4809.73" r="21.79" />
+				<circle id="reservoirs-5" data-name="reservoirs" class="cls-3" cx="233.11" cy="4801.59" r="21.79" />
+				<circle id="reservoirs-6" data-name="reservoirs" class="cls-3" cx="158.58" cy="4792.11" r="21.79" />
+				<text id="text" class="cls-5" transform="translate(194.33 4767.82)">
+					<tspan class="cls-6">W</tspan>
+					<tspan class="cls-7" x="14.2" y="0">A</tspan>
+					<tspan x="23.83" y="0">TER RESE</tspan>
+					<tspan class="cls-8" x="91.4" y="0">R</tspan>
+					<tspan x="101.38" y="0">VOIRS</tspan>
+				</text>
 			</g>
-			<g data-micromodal-trigger="2537" data-tippy-content="2537">
-			  <polygon id="bg-2" data-tippy-content="bg" class="available" points="756.75 4901.06 765.09 4833.8 799.76 4840.43 791.62 4906.74 756.75 4901.06"/>
-			  <text id="text-2" class="text" transform="translate(779.74 4886.71) rotate(-82.44)">2537</text>
+			<g id="school">
+				<polygon id="amenity-2" data-name="amenity" class="amenity"
+					points="488.65 4571.38 616.35 4295.12 628.86 4290.57 815.3 4376.22 733.45 4604.54 488.65 4571.38" />
+				<text id="text-2" data-name="text" class="cls-5" transform="translate(589.68 4479)">PRI<tspan
+						class="cls-9" x="23.56" y="0">M</tspan>
+					<tspan x="37.85" y="0">A</tspan>
+					<tspan class="cls-10" x="48.87" y="0">R</tspan>
+					<tspan x="58.36" y="0">Y SCHOOL</tspan>
+				</text>
 			</g>
-			<g data-micromodal-trigger="2538" data-tippy-content="2538">
-			  <polygon id="bg-3" data-tippy-content="bg" class="available" points="722.33 4896.89 731.17 4828.68 765.09 4833.8 756.75 4901.06 722.33 4896.89"/>
-			  <text id="text-3" class="text" transform="translate(744.92 4883.58) rotate(-82.44)">2538 </text>
+			<g id="stand-2536" data-micromodal-trigger="2536">
+				<polygon id="bg" class="available"
+					points="824.59 4909.97 831.03 4905.8 844.86 4866.2 838.23 4850.66 810.94 4840.43 799.76 4839.29 791.62 4906.74 824.59 4909.97" />
+				<text id="text-3" data-name="text" class="text"
+					transform="translate(817.59 4894.91) rotate(-82.44)">2536</text>
 			</g>
-			<g data-micromodal-trigger="2539" data-tippy-content="2539">
-			  <polygon id="bg-4" data-tippy-content="bg" class="available" points="687.47 4891.33 696.06 4825.14 731.17 4828.68 722.33 4896.89 687.47 4891.33"/>
-			  <text id="text-4" class="text" transform="translate(710.82 4878.59) rotate(-82.44)">2539</text>
+			<g id="stand-2537" data-micromodal-trigger="2537">
+				<polygon id="bg-2" data-name="bg" class="available"
+					points="756.75 4901.06 765.09 4833.8 799.76 4839.29 791.62 4906.74 756.75 4901.06" />
+				<text id="text-4" data-name="text" class="text"
+					transform="translate(779.74 4886.71) rotate(-82.44)">2537</text>
 			</g>
-			<g data-micromodal-trigger="2540" data-tippy-content="2540">
-			  <polygon id="bg-5" data-tippy-content="bg" class="available" points="653.11 4886.79 661.2 4819.59 696.06 4825.14 687.47 4891.33 653.11 4886.79"/>
-			  <text id="text-5" class="text" transform="translate(675.91 4873.03) rotate(-82.44)">2540</text>
+			<g id="stand-2538" data-micromodal-trigger="2538">
+				<polygon id="bg-3" data-name="bg" class="available"
+					points="722.33 4896.89 731.04 4829.72 765.09 4833.8 756.75 4901.06 722.33 4896.89" />
+				<text id="text-5" data-name="text" class="text"
+					transform="translate(744.92 4883.58) rotate(-82.44)">2538 </text>
 			</g>
-			<polygon class="available" points="618.79 4882.33 626.96 4815.23 661.2 4819.59 653.11 4886.79 618.79 4882.33"/>
-			<polygon class="available" points="583.97 4877.66 592.1 4810.3 626.96 4815.23 618.79 4882.33 583.97 4877.66"/>
-			<polygon class="available" points="549.65 4873.05 558 4805.75 592.1 4810.3 583.97 4877.66 549.65 4873.05"/>
-			<polygon class="available" points="514.2 4868.29 522.94 4801.59 558 4805.75 549.65 4873.05 514.2 4868.29"/>
-			<polygon class="available" points="480.15 4863.72 488.27 4796.66 522.94 4801.59 514.2 4868.29 480.15 4863.72"/>
-			<polygon class="available" points="445.68 4859.09 453.97 4792.11 488.27 4796.66 480.15 4863.72 445.68 4859.09"/>
-			<polygon class="available" points="402.63 4853.31 409.64 4797.8 421.76 4787.94 453.97 4792.11 445.68 4859.09 402.63 4853.31"/>
+			<g id="stand-2539" data-micromodal-trigger="2539">
+				<polygon id="bg-4" data-name="bg" class="available"
+					points="687.47 4891.33 696.06 4825.14 731.04 4829.72 722.33 4896.89 687.47 4891.33" />
+				<text id="text-6" data-name="text" class="text"
+					transform="translate(710.82 4878.59) rotate(-82.44)">2539</text>
+			</g>
+			<g id="stand-2540" data-micromodal-trigger="2540">
+				<polygon id="bg-5" data-name="bg" class="available"
+					points="653.11 4886.79 661.2 4819.59 696.06 4825.14 687.47 4891.33 653.11 4886.79" />
+				<text id="text-7" data-name="text" class="text"
+					transform="translate(675.91 4873.03) rotate(-82.44)">2540</text>
+			</g>
+			<g id="stand-2541" data-micromodal-trigger="2541">
+				<polygon id="bg-6" data-name="bg" class="available"
+					points="618.79 4882.33 626.96 4815.23 661.2 4819.59 653.11 4886.79 618.79 4882.33" />
+				<text id="text-8" data-name="text" class="text"
+					transform="translate(640.48 4868.58) rotate(-82.44)">2541</text>
+			</g>
+			<g id="stand-2542" data-micromodal-trigger="2542">
+				<polygon id="bg-7" data-name="bg" class="available"
+					points="583.97 4877.66 592.1 4810.3 626.96 4815.23 618.79 4882.33 583.97 4877.66" />
+				<text id="text-9" data-name="text" class="text"
+					transform="translate(605.91 4865.37) rotate(-82.44)">2542</text>
+			</g>
+			<g id="stand-2543" data-micromodal-trigger="2543">
+				<polygon id="bg-8" data-name="bg" class="available"
+					points="549.65 4873.05 558 4805.75 592.1 4810.3 583.97 4877.66 549.65 4873.05" />
+				<text id="text-10" data-name="text" class="text"
+					transform="translate(571.43 4860.38) rotate(-82.44)">2543</text>
+			</g>
+			<g id="stand-2544" data-micromodal-trigger="2544">
+				<polygon id="bg-9" data-name="bg" class="available"
+					points="514.2 4868.29 522.94 4801.59 558 4805.75 549.65 4873.05 514.2 4868.29" />
+				<text id="text-11" data-name="text" class="text"
+					transform="translate(539.06 4854.82) rotate(-82.44)">2544</text>
+			</g>
+			<g id="stand-2545" data-micromodal-trigger="2545">
+				<polygon id="bg-10" data-name="bg" class="available"
+					points="480.15 4863.72 488.27 4796.66 522.94 4801.59 514.2 4868.29 480.15 4863.72" />
+				<text id="text-12" data-name="text" class="text"
+					transform="translate(501.99 4851.37) rotate(-82.44)">2545</text>
+			</g>
+			<g id="stand-2546" data-micromodal-trigger="2546">
+				<polygon id="bg-11" data-name="bg" class="available"
+					points="445.68 4859.09 453.97 4792.11 488.27 4796.66 480.15 4863.72 445.68 4859.09" />
+				<text id="text-13" data-name="text" class="text"
+					transform="translate(467.42 4847.16) rotate(-82.44)">2546</text>
+			</g>
+			<g id="stand-2547" data-micromodal-trigger="2547">
+				<polygon id="bg-12" data-name="bg" class="available"
+					points="402.63 4853.31 409.64 4797.8 421.76 4787.94 453.97 4792.11 445.68 4859.09 402.63 4853.31" />
+				<text id="text-14" data-name="text" class="text"
+					transform="translate(428.74 4841.09) rotate(-82.44)">2547</text>
+			</g>
+			<g id="stand-2550" data-micromodal-trigger="2550">
+				<polygon id="bg-13" data-name="bg" class="available"
+					points="438.88 4770.83 395.09 4765.61 402.63 4697.03 447.97 4703.12 438.88 4770.83" />
+				<text id="text-15" data-name="text" class="text"
+					transform="translate(421.77 4756.67) rotate(-82.44)">2550</text>
+			</g>
+			<g id="stand-2551" data-micromodal-trigger="2551">
+				<polygon id="bg-14" data-name="bg" class="available"
+					points="474.25 4775.63 438.88 4770.83 447.97 4703.12 483.09 4708.43 474.25 4775.63" />
+				<text id="text-16" data-name="text" class="text"
+					transform="translate(461.43 4759.68) rotate(-82.44)">2551</text>
+			</g>
+			<g id="stand-2552" data-micromodal-trigger="2552">
+				<polygon id="bg-15" data-name="bg" class="available"
+					points="508.61 4779.67 474.25 4775.63 483.09 4708.43 517.7 4713.23 508.61 4779.67" />
+				<text id="text-17" data-name="text" class="text"
+					transform="translate(496.42 4762.5) rotate(-82.44)">2552</text>
+			</g>
+			<g id="stand-2553" data-micromodal-trigger="2553">
+				<polygon id="bg-16" data-name="bg" class="available"
+					points="542.96 4784.22 508.61 4779.67 517.7 4713.23 553.32 4717.27 542.96 4784.22" />
+				<text id="text-18" data-name="text" class="text"
+					transform="translate(531.41 4766.29) rotate(-82.44)">2553</text>
+			</g>
+			<g id="stand-2554" data-micromodal-trigger="2554">
+				<polygon id="bg-17" data-name="bg" class="available"
+					points="577.83 4787.94 542.96 4784.22 553.32 4717.27 587.43 4721.56 577.83 4787.94" />
+				<text id="text-19" data-name="text" class="text"
+					transform="translate(566.02 4770.18) rotate(-82.44)">2554</text>
+			</g>
+			<g id="stand-2555" data-micromodal-trigger="2555">
+				<polygon id="bg-18" data-name="bg" class="available"
+					points="613.61 4793.06 577.83 4787.94 587.43 4721.56 621.78 4726.36 613.61 4793.06" />
+				<text id="text-20" data-name="text" class="text"
+					transform="translate(600.96 4774.88) rotate(-82.44)">2555</text>
+			</g>
+			<g id="stand-2556" data-micromodal-trigger="2556">
+				<polygon id="bg-19" data-name="bg" class="available"
+					points="655.76 4731.29 647.43 4797.99 613.61 4793.06 621.78 4726.36 655.76 4731.29" />
+				<text id="text-21" data-name="text" class="text"
+					transform="translate(635.13 4780.71) rotate(-82.44)">2556</text>
+			</g>
+			<g id="stand-2557" data-micromodal-trigger="2557">
+				<polygon id="bg-20" data-name="bg" class="available"
+					points="689.87 4735.84 655.76 4731.29 647.43 4797.99 681.34 4801.59 689.87 4735.84" />
+				<text id="text-22" data-name="text" class="text"
+					transform="translate(669.09 4784.46) rotate(-82.44)">2557</text>
+			</g>
+			<g id="stand-2558" data-micromodal-trigger="2558">
+				<polygon id="bg-21" data-name="bg" class="available"
+					points="724.54 4740.39 689.87 4735.84 681.34 4801.59 716.21 4805.75 724.54 4740.39" />
+				<text id="text-23" data-name="text" class="text"
+					transform="translate(705.9 4790.19) rotate(-82.44)">2558</text>
+			</g>
+			<g id="stand-2559" data-micromodal-trigger="2559">
+				<polygon id="bg-22" data-name="bg" class="available"
+					points="759.6 4744.93 724.54 4740.39 716.21 4805.75 751.55 4810.89 759.6 4744.93" />
+				<text id="text-24" data-name="text" class="text"
+					transform="translate(738.49 4793.21) rotate(-82.44)">2559</text>
+			</g>
+			<g id="stand-2560" data-micromodal-trigger="2560">
+				<polygon id="bg-23" data-name="bg" class="available"
+					points="794.08 4749.67 784.99 4815.99 751.55 4810.89 759.6 4744.93 794.08 4749.67" />
+				<text id="text-25" data-name="text" class="text"
+					transform="translate(773.26 4798.03) rotate(-82.44)">2560</text>
+			</g>
+			<g id="stand-2561" data-micromodal-trigger="2561">
+				<polygon id="bg-24" data-name="bg" class="available"
+					points="828 4754.41 794.08 4749.67 784.99 4815.99 820.04 4820.53 828 4754.41" />
+				<text id="text-26" data-name="text" class="text"
+					transform="translate(808.19 4802.67) rotate(-82.44)">2561</text>
+			</g>
+			<g id="stand-2562" data-micromodal-trigger="2562">
+				<polygon id="bg-25" data-name="bg" class="available"
+					points="882.94 4761.04 861.72 4822.81 846 4831.71 820.04 4820.53 828 4754.41 882.94 4761.04" />
+				<text id="text-27" data-name="text" class="text"
+					transform="translate(847.4 4806.58) rotate(-82.44)">2562</text>
+			</g>
+			<g id="stand-2563" data-micromodal-trigger="2563">
+				<polygon id="bg-26" data-name="bg" class="available"
+					points="897.53 4720.87 882.94 4761.04 828 4754.41 835.95 4686.77 847.7 4688.47 891.09 4705.52 897.53 4720.87" />
+				<text id="text-28" data-name="text" class="text" transform="translate(856.8 4743.94) rotate(-82.44)">
+					<tspan xml:space="preserve">2563 </tspan>
+				</text>
+			</g>
+			<g id="stand-2564" data-micromodal-trigger="2564">
+				<polygon id="bg-27" data-name="bg" class="available"
+					points="801.28 4682.98 835.95 4686.77 828 4754.41 794.08 4749.67 801.28 4682.98" />
+				<text id="text-29" data-name="text" class="text" transform="translate(815.08 4739.14) rotate(-82.44)">
+					<tspan xml:space="preserve">2564 </tspan>
+				</text>
+			</g>
+			<g id="stand-2565" data-micromodal-trigger="2565">
+				<polygon id="bg-28" data-name="bg" class="available"
+					points="766.79 4678.24 759.6 4744.93 794.08 4749.67 801.28 4682.98 766.79 4678.24" />
+				<text id="text-30" data-name="text" class="text"
+					transform="translate(780.88 4735.77) rotate(-82.44)">2565</text>
+			</g>
+			<g id="stand-2566" data-micromodal-trigger="2566">
+				<polygon id="bg-29" data-name="bg" class="available"
+					points="732.12 4673.69 724.54 4740.39 759.6 4744.93 766.79 4678.24 732.12 4673.69" />
+				<text id="text-31" data-name="text" class="text"
+					transform="translate(746.11 4730.56) rotate(-82.44)">2566</text>
+			</g>
+			<g id="stand-2567" data-micromodal-trigger="2567">
+				<polygon id="bg-30" data-name="bg" class="available"
+					points="697.64 4668.95 689.87 4735.84 724.54 4740.39 732.12 4673.69 697.64 4668.95" />
+				<text id="text-32" data-name="text" class="text"
+					transform="translate(712.78 4722.24) rotate(-82.44)">2567</text>
+			</g>
+			<g id="stand-2568" data-micromodal-trigger="2568">
+				<polygon id="bg-31" data-name="bg" class="available"
+					points="663.15 4664.41 655.76 4731.29 689.87 4735.84 697.64 4668.95 663.15 4664.41" />
+				<text id="text-33" data-name="text" class="text"
+					transform="translate(676.96 4717.69) rotate(-82.44)">2568</text>
+			</g>
+			<g id="stand-2569" data-micromodal-trigger="2569">
+				<polygon id="bg-32" data-name="bg" class="available"
+					points="629.24 4660.05 621.78 4726.36 655.76 4731.29 663.15 4664.41 629.24 4660.05" />
+				<text id="text-34" data-name="text" class="text"
+					transform="translate(642.91 4713.41) rotate(-82.44)">2569</text>
+			</g>
+			<g id="stand-2570" data-micromodal-trigger="2570">
+				<polygon id="bg-33" data-name="bg" class="available"
+					points="594.94 4655.12 587.43 4721.56 621.78 4726.36 629.24 4660.05 594.94 4655.12" />
+				<text id="text-35" data-name="text" class="text"
+					transform="translate(608.81 4708.31) rotate(-82.44)">2570</text>
+			</g>
+			<g id="stand-2571" data-micromodal-trigger="2571">
+				<polygon id="bg-34" data-name="bg" class="available"
+					points="560.08 4650.39 553.32 4717.27 587.43 4721.56 594.94 4655.12 560.08 4650.39" />
+				<text id="text-36" data-name="text" class="text"
+					transform="translate(575.42 4703.25) rotate(-82.44)">2571</text>
+			</g>
+			<g id="stand-2572" data-micromodal-trigger="2572">
+				<polygon id="bg-35" data-name="bg" class="available"
+					points="524.65 4645.46 517.7 4713.23 553.32 4717.27 560.08 4650.39 524.65 4645.46" />
+				<text id="text-37" data-name="text" class="text"
+					transform="translate(542.96 4699.43) rotate(-82.44)">2572</text>
+			</g>
+			<g id="stand-2573" data-micromodal-trigger="2573">
+				<polygon id="bg-36" data-name="bg" class="available"
+					points="490.54 4641.29 483.09 4708.43 517.7 4713.23 524.65 4645.46 490.54 4641.29" />
+				<text id="text-38" data-name="text" class="text"
+					transform="translate(505.82 4695.35) rotate(-82.44)">2573</text>
+			</g>
+			<g id="stand-2574" data-micromodal-trigger="2574">
+				<polygon id="bg-37" data-name="bg" class="available"
+					points="455.68 4636.55 447.97 4703.12 483.09 4708.43 490.54 4641.29 455.68 4636.55" />
+				<text id="text-39" data-name="text" class="text"
+					transform="translate(470.83 4686.52) rotate(-82.44)">2574</text>
+			</g>
+			<g id="stand-2575" data-micromodal-trigger="2575">
+				<polygon id="bg-38" data-name="bg" class="available"
+					points="421.53 4631.82 413.01 4698.43 447.97 4703.12 455.68 4636.55 421.53 4631.82" />
+				<text id="text-40" data-name="text" class="text"
+					transform="translate(435.2 4685.04) rotate(-82.44)">2575</text>
+			</g>
+			<g id="stand-2576" data-micromodal-trigger="2576">
+				<polygon id="bg-39" data-name="bg" class="available"
+					points="386.71 4627.46 378.98 4693.89 413.01 4698.43 421.53 4631.82 386.71 4627.46" />
+				<text id="text-41" data-name="text" class="text"
+					transform="translate(400.71 4679.34) rotate(-82.44)">2576</text>
+			</g>
+			<g id="stand-2577" data-micromodal-trigger="2577">
+				<polygon id="bg-40" data-name="bg" class="available"
+					points="352.42 4622.91 344.47 4689.3 378.98 4693.89 386.71 4627.46 352.42 4622.91" />
+				<text id="text-42" data-name="text" class="text"
+					transform="translate(367.34 4677.14) rotate(-82.44)">2577</text>
+			</g>
+			<g id="stand-2578" data-micromodal-trigger="2578">
+				<polygon id="bg-41" data-name="bg" class="available"
+					points="318.69 4617.99 310.37 4684.77 344.47 4689.3 352.42 4622.91 318.69 4617.99" />
+				<text id="text-43" data-name="text" class="text"
+					transform="translate(332.03 4671.21) rotate(-82.44)">2578</text>
+			</g>
+			<g id="stand-2579" data-micromodal-trigger="2579">
+				<polygon id="bg-42" data-name="bg" class="available"
+					points="290.65 4615.33 261.28 4678.24 310.37 4684.77 318.69 4617.99 290.65 4615.33" />
+				<text id="text-44" data-name="text" class="text"
+					transform="translate(295.59 4671.21) rotate(-82.44)">2579</text>
+			</g>
+			<g id="stand-2580" data-micromodal-trigger="2580">
+				<polygon id="bg-43" data-name="bg" class="available"
+					points="239.11 4591.08 223.38 4596.2 199.51 4649.82 261.28 4678.24 290.65 4615.33 239.11 4591.08" />
+				<text id="text-45" data-name="text" class="text" transform="translate(248.23 4653.01) rotate(-82.44)">
+					<tspan xml:space="preserve">2580 </tspan>
+				</text>
+			</g>
+			<g id="stand-2581" data-micromodal-trigger="2581">
+				<polygon id="bg-44" data-name="bg" class="available"
+					points="846.96 4668.95 859.76 4633.9 920.65 4655.12 913.11 4678.24 897.53 4686.77 846.96 4668.95" />
+				<text id="text-46" data-name="text" class="text" transform="translate(864.11 4657.36) rotate(17.79)">
+					<tspan xml:space="preserve">2581 </tspan>
+				</text>
+			</g>
+			<g id="stand-2582" data-micromodal-trigger="2582">
+				<polygon id="bg-45" data-name="bg" class="available"
+					points="871.89 4601.95 932.52 4622.79 920.65 4655.12 859.76 4633.9 871.89 4601.95" />
+				<text id="text-47" data-name="text" class="text"
+					transform="translate(876.94 4625.96) rotate(15.97)">2582</text>
+			</g>
+			<g id="stand-2583" data-micromodal-trigger="2583">
+				<polygon id="bg-46" data-name="bg" class="available"
+					points="883.8 4568.47 944.9 4590.26 932.52 4622.79 871.89 4601.95 883.8 4568.47" />
+				<text id="text-48" data-name="text" class="text"
+					transform="translate(887.7 4590.72) rotate(15.97)">2583</text>
+			</g>
+			<g id="stand-2584" data-micromodal-trigger="2584">
+				<polygon id="bg-47" data-name="bg" class="available"
+					points="896.14 4535.12 956.52 4557.8 944.9 4590.26 883.8 4568.47 896.14 4535.12" />
+				<text id="text-49" data-name="text" class="text"
+					transform="translate(898.8 4561.16) rotate(15.97)">2584</text>
+			</g>
+			<g id="stand-2585" data-micromodal-trigger="2585">
+				<polygon id="bg-48" data-name="bg" class="available"
+					points="908.39 4502.28 968.39 4524.26 956.52 4557.8 896.14 4535.12 908.39 4502.28" />
+				<text id="text-50" data-name="text" class="text"
+					transform="translate(910.82 4526.68) rotate(15.97)">2585</text>
+			</g>
+			<g id="stand-2586" data-micromodal-trigger="2586">
+				<polygon id="bg-49" data-name="bg" class="available"
+					points="919.13 4469.94 979.76 4491.42 968.39 4524.26 908.39 4502.28 919.13 4469.94" />
+				<text id="text-51" data-name="text" class="text"
+					transform="translate(925.14 4494.47) rotate(15.97)">2586</text>
+			</g>
+			<g id="stand-2587" data-micromodal-trigger="2587">
+				<polygon id="bg-50" data-name="bg" class="available"
+					points="932.52 4431.54 983.81 4449.3 989.36 4466.41 979.76 4491.42 919.13 4469.94 932.52 4431.54" />
+				<text id="text-52" data-name="text" class="text"
+					transform="translate(936.24 4458.85) rotate(15.97)">2587</text>
+			</g>
+			<g id="stand-2588" data-micromodal-trigger="2588">
+				<polygon id="bg-51" data-name="bg" class="available"
+					points="791.81 4653.1 801.28 4662.95 846.96 4668.95 859.76 4633.9 799.13 4610.91 791.81 4653.1" />
+				<text id="text-53" data-name="text" class="text"
+					transform="translate(802.55 4637.65) rotate(15.97)">2588</text>
+			</g>
+			<g id="stand-2589" data-micromodal-trigger="2589">
+				<polygon id="bg-52" data-name="bg" class="available"
+					points="799.13 4610.91 859.76 4633.9 871.89 4601.95 810.25 4577.56 799.13 4610.91" />
+				<text id="text-54" data-name="text" class="text"
+					transform="translate(814.19 4599.82) rotate(15.97)">2589</text>
+			</g>
+			<g id="stand-2590" data-micromodal-trigger="2590">
+				<polygon id="bg-53" data-name="bg" class="available"
+					points="810.25 4577.56 871.89 4601.95 883.8 4568.47 822.88 4546.49 810.25 4577.56" />
+				<text id="text-55" data-name="text" class="text"
+					transform="translate(829.51 4567.35) rotate(15.97)">2590</text>
+			</g>
+			<g id="stand-2591" data-micromodal-trigger="2591">
+				<polygon id="bg-54" data-name="bg" class="available"
+					points="822.88 4546.49 883.8 4568.47 896.14 4535.12 834.5 4513.4 822.88 4546.49" />
+				<text id="text-56" data-name="text" class="text"
+					transform="translate(839.98 4538.37) rotate(15.97)">2591</text>
+			</g>
+			<g id="stand-2592" data-micromodal-trigger="2592">
+				<polygon id="bg-55" data-name="bg" class="available"
+					points="834.5 4513.4 896.14 4535.12 908.39 4502.28 845.87 4480.3 834.5 4513.4" />
+				<text id="text-57" data-name="text" class="text"
+					transform="translate(851.62 4503.31) rotate(15.97)">2592</text>
+			</g>
+			<g id="stand-2593" data-micromodal-trigger="2593">
+				<polygon id="bg-56" data-name="bg" class="available"
+					points="845.87 4480.3 908.39 4502.28 919.13 4469.94 857.43 4447.71 845.87 4480.3" />
+				<text id="text-58" data-name="text" class="text"
+					transform="translate(864.03 4473.25) rotate(15.97)">2593</text>
+			</g>
+			<g id="stand-2594" data-micromodal-trigger="2594">
+				<polygon id="bg-57" data-name="bg" class="available"
+					points="887.78 4410.07 932.52 4431.54 919.13 4469.94 857.43 4447.71 873.91 4412.6 887.78 4410.07" />
+				<text id="text-59" data-name="text" class="text"
+					transform="translate(876.94 4439.52) rotate(15.97)">2594</text>
+			</g>
+			<g id="stand-2595" data-micromodal-trigger="2595">
+				<polygon id="bg-58" data-name="bg" class="available"
+					points="853.01 4394.41 859.45 4406.91 850.35 4426.62 803.16 4410.07 815.3 4376.22 853.01 4394.41" />
+				<text id="text-60" data-name="text" class="text"
+					transform="translate(814.19 4402.99) rotate(15.97)">2595</text>
+			</g>
+			<g id="stand-2596" data-micromodal-trigger="2596">
+				<polygon id="bg-59" data-name="bg" class="available"
+					points="839.74 4449.3 850.35 4426.62 803.16 4410.07 795.03 4432.76 839.74 4449.3" />
+				<text id="text-61" data-name="text" class="text"
+					transform="translate(802.55 4429.41) rotate(15.97)">2596</text>
+			</g>
+			<g id="stand-2597" data-micromodal-trigger="2597">
+				<polygon id="bg-60" data-name="bg" class="available"
+					points="831.31 4472.66 839.74 4449.3 795.03 4432.76 786.52 4456.49 831.31 4472.66" />
+				<text id="text-62" data-name="text" class="text"
+					transform="translate(795.47 4451.21) rotate(15.97)">2597</text>
+			</g>
+			<g id="stand-2598" data-micromodal-trigger="2598">
+				<polygon id="bg-61" data-name="bg" class="available"
+					points="822.88 4496.6 831.31 4472.66 786.52 4456.49 778.31 4479.41 822.88 4496.6" />
+				<text id="text-63" data-name="text" class="text"
+					transform="translate(787.79 4473.25) rotate(15.97)">2598</text>
+			</g>
+			<g id="stand-2599" data-micromodal-trigger="2599">
+				<polygon id="bg-62" data-name="bg" class="available"
+					points="815.3 4518.13 822.88 4496.6 778.31 4479.41 770.63 4502.14 815.3 4518.13" />
+				<text id="text-64" data-name="text" class="text"
+					transform="translate(777.58 4500) rotate(15.97)">2599</text>
+			</g>
+			<g id="stand-2600" data-micromodal-trigger="2600">
+				<polygon id="bg-63" data-name="bg" class="available"
+					points="806.21 4540.93 815.3 4518.13 770.63 4502.14 761.76 4525.55 806.21 4540.93" />
+				<text id="text-65" data-name="text" class="text"
+					transform="translate(771.9 4522.13) rotate(15.97)">2600</text>
+			</g>
+			<g id="stand-2601" data-micromodal-trigger="2601">
+				<polygon id="bg-64" data-name="bg" class="available"
+					points="798.13 4563.99 806.21 4540.93 761.76 4525.55 753.66 4548.17 798.13 4563.99" />
+				<text id="text-66" data-name="text" class="text"
+					transform="translate(761.96 4542.7) rotate(15.97)">2601</text>
+			</g>
+			<g id="stand-2602" data-micromodal-trigger="2602">
+				<polygon id="bg-65" data-name="bg" class="available"
+					points="789.35 4588.43 798.13 4563.99 753.66 4548.17 744.54 4573.58 789.35 4588.43" />
+				<text id="text-67" data-name="text" class="text"
+					transform="translate(753.18 4566.34) rotate(15.97)">2602</text>
+			</g>
+			<g id="stand-2603" data-micromodal-trigger="2603">
+				<polygon id="bg-66" data-name="bg" class="available"
+					points="779.93 4610.91 789.35 4588.43 744.54 4573.58 733.45 4604.54 779.93 4610.91" />
+				<text id="text-68" data-name="text" class="text"
+					transform="translate(743.24 4590.72) rotate(15.97)">2603</text>
+			</g>
+			<g id="stand-2604" data-micromodal-trigger="2604">
+				<polygon id="bg-67" data-name="bg" class="available"
+					points="763.57 4658.72 776.31 4651.47 779.93 4610.91 742.16 4605.73 737.67 4655.12 763.57 4658.72" />
+				<text id="text-69" data-name="text" class="text"
+					transform="translate(760.02 4651.46) rotate(-78.81)">2604</text>
+			</g>
+			<g id="stand-2605" data-micromodal-trigger="2605">
+				<polygon id="bg-68" data-name="bg" class="available"
+					points="712.42 4651.47 737.67 4655.12 742.16 4605.73 718.88 4601.95 712.42 4651.47" />
+				<text id="text-70" data-name="text" class="text"
+					transform="translate(728.73 4646.96) rotate(-82.46)">2605</text>
+			</g>
+			<g id="stand-2606" data-micromodal-trigger="2606">
+				<polygon id="bg-69" data-name="bg" class="available"
+					points="689.87 4647.9 712.42 4651.47 718.88 4601.95 694.34 4599.24 689.87 4647.9" />
+				<text id="text-71" data-name="text" class="text"
+					transform="matrix(0.11, -0.99, 0.99, 0.11, 706.06, 4644.81)">2606</text>
+			</g>
+			<g id="stand-2607" data-micromodal-trigger="2607">
+				<polygon id="bg-70" data-name="bg" class="available"
+					points="665.99 4645.33 689.87 4647.9 694.34 4599.24 670.91 4596.07 665.99 4645.33" />
+				<text id="text-72" data-name="text" class="text"
+					transform="matrix(0.11, -0.99, 0.99, 0.11, 681.82, 4640.34)">2607</text>
+			</g>
+			<g id="stand-2608" data-micromodal-trigger="2608">
+				<polygon id="bg-71" data-name="bg" class="available"
+					points="642.38 4642.43 665.99 4645.33 670.91 4596.07 647.19 4592.85 642.38 4642.43" />
+				<text id="text-73" data-name="text" class="text"
+					transform="matrix(0.11, -0.99, 0.99, 0.11, 657.94, 4637.58)">2608</text>
+			</g>
+			<g id="stand-2609" data-micromodal-trigger="2609">
+				<polygon id="bg-72" data-name="bg" class="available"
+					points="619.29 4638.1 642.38 4642.43 647.19 4592.85 623.91 4589.7 619.29 4638.1" />
+				<text id="text-74" data-name="text" class="text"
+					transform="matrix(0.11, -0.99, 0.99, 0.11, 636.39, 4632.98)">2609</text>
+			</g>
+			<g id="stand-2610" data-micromodal-trigger="2610">
+				<polygon id="bg-73" data-name="bg" class="available"
+					points="594.94 4635.61 619.29 4638.1 623.91 4589.7 600.2 4586.49 594.94 4635.61" />
+				<text id="text-75" data-name="text" class="text"
+					transform="matrix(0.11, -0.99, 0.99, 0.11, 611.25, 4630.07)">2610</text>
+			</g>
+			<g id="stand-2611" data-micromodal-trigger="2611">
+				<polygon id="bg-74" data-name="bg" class="available"
+					points="570.88 4632.23 594.94 4635.61 600.2 4586.49 575.36 4583.12 570.88 4632.23" />
+				<text id="text-76" data-name="text" class="text"
+					transform="matrix(0.11, -0.99, 0.99, 0.11, 588.34, 4626.73)">2611</text>
+			</g>
+			<g id="stand-2612" data-micromodal-trigger="2612">
+				<polygon id="bg-75" data-name="bg" class="available"
+					points="547.38 4629.39 570.88 4632.23 575.36 4583.12 551.92 4579.95 547.38 4629.39" />
+				<text id="text-77" data-name="text" class="text"
+					transform="matrix(0.11, -0.99, 0.99, 0.11, 564.64, 4623.29)">2612</text>
+			</g>
+			<g id="stand-2613" data-micromodal-trigger="2613">
+				<polygon id="bg-76" data-name="bg" class="available"
+					points="523.13 4625.35 547.38 4629.39 551.92 4579.95 527.47 4576.63 523.13 4625.35" />
+				<text id="text-78" data-name="text" class="text"
+					transform="matrix(0.11, -0.99, 0.99, 0.11, 541.65, 4619.5)">2613</text>
+			</g>
+			<g id="stand-2614" data-micromodal-trigger="2614">
+				<polygon id="bg-77" data-name="bg" class="available"
+					points="483.09 4609.18 492.06 4621.98 523.13 4625.35 527.47 4576.63 488.65 4571.38 483.09 4609.18" />
+				<text id="text-79" data-name="text" class="text"
+					transform="matrix(0.11, -0.99, 0.99, 0.11, 511.33, 4614.9)">2614</text>
+			</g>
+			<g id="border">
+				<g>
+					<polyline class="cls-13" points="4.53 4779.04 0.56 4785.99 3.99 4793.22" />
+					<polyline class="cls-14"
+						points="7.44 4800.5 9.66 4805.19 54.63 4825.14 479.05 4881.48 835.46 4929.39" />
+					<polyline class="cls-13" points="839.46 4929.93 847.38 4931 850.11 4923.47" />
+					<polyline class="cls-15"
+						points="852.82 4915.95 1028.77 4429.27 1083.34 4278.2 1494.12 3784.55 1612.85 3639.24" />
+					<polyline class="cls-13" points="1615.38 3636.14 1620.44 3629.94 1628.44 3629.94" />
+					<polyline class="cls-16" points="1636.54 3629.94 1642.67 3629.94 2249.49 3750.2 2538.8 3806.99" />
+					<polyline class="cls-13" points="2542.78 3807.77 2550.63 3809.31 2553.31 3801.78" />
+					<polyline class="cls-17"
+						points="2556.01 3794.22 2789.62 3139.33 2932.1 2737.14 3076.61 2332.93 3218.59 1932.26 3354.5 1551.8 3497.49 1149.1 3648.56 725.19 3791.55 325.52 3903.72 11.95" />
+					<polyline class="cls-13" points="3905.07 8.17 3907.76 0.64 3899.88 2" />
+					<polyline class="cls-18" points="3891.95 3.36 3248.39 114.32 2588.24 228.98" />
+					<polyline class="cls-13" points="2584.28 229.67 2576.39 231.04 2573.71 238.57" />
+					<polyline class="cls-19"
+						points="2571.03 246.1 1804.86 2397.1 1353.15 2807.88 1015.64 3224.72 339.09 4060.43 12.69 4764.77 6.51 4775.57" />
+				</g>
+			</g>
 		</svg>
-		  
-		
+
+
+
 		<div id="map-legend" class="map-legend" style="display: none;">
 			<h2>Map Legend</h2>
 			<div class="map-legend__key">
@@ -155,7 +723,9 @@
 					</header>
 					<main class="modal__content">
 						<h4>Size: 100sqm</h4>
-						<p>Description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate veniam in ipsam, adipisci ratione totam enim est neque natus doloribus cum perspiciatis exercitationem blanditiis. Rem in doloribus quis similique! Manual</p>
+						<p>Description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate veniam
+							in ipsam, adipisci ratione totam enim est neque natus doloribus cum perspiciatis
+							exercitationem blanditiis. Rem in doloribus quis similique! Manual</p>
 					</main>
 					<footer class="modal__footer">
 						<a class="modal__btn" href="https://staging.northgate.co.zw/" target="_blank">Buy Stand</a>
@@ -165,7 +735,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<script src="./api/stands.js"></script>
 	<script>
 		function showLegend() {

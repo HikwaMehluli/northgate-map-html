@@ -26,14 +26,20 @@
 }
 
 .modal__header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	// display: flex;
+	// justify-content: space-between;
+	// align-items: center;
+	position: relative;
+
+	h3.modal__sqm {
+		font-style: italic;
+		font-weight: 500;
+		margin: 0;
+	}
 
 	h2.modal__title {
 		color: var(--bg-blue);
-		font-size: 1.3rem;
-		font-weight: 600;
+		margin-bottom: 0;
 		
 		&.available,
 		&.sold,
@@ -45,8 +51,8 @@
 				margin: 0 10px 10px 0;
 				font-size: 1rem;
 				position: absolute;
-				top: 0;
-				left: 0;
+				top: -50px;
+				left: -30px;
 			}
 		}
 		&.available {
@@ -76,6 +82,9 @@
 		border-radius: 50%;
 		width: 40px;
 		height: 40px;
+		position: absolute;
+		top: -40px;
+		right: -15px;
 		transition: var(--transition);
 
 		&:before {
@@ -97,9 +106,13 @@
 	line-height: 1.5;
 	color: var(--bg-black);
 	
-	h4 {
+	h3.modal__price {
+		color: var(--bg-blue);
+		margin-bottom: 0;
+	}
+	
+	p {
 		margin: 0;
-		font-weight: 600;
 	}
 }
 

@@ -9,22 +9,34 @@ async function fetchModalData() {
 		return data;
 	} catch (error) {
 		console.log('Error fetching modal data Mr Hikwa:', error);
-		return[];
+		return [];
 	}
 }
 
 // Generate modal HTML structure
 function createModal(modal) {
-	return`
+	return `
 	<div class="modal micromodal-slide" id="${modal.ID}" aria-hidden="true">
 		<div class="modal__overlay" tabindex="-${modal.ID}" data-micromodal-close>
 			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="${modal.ID}-title">
 				<header class="modal__header">
-					<h2 class="modal__title ${modal.availability}" id="${modal.ID}-title">Stand No. ${modal.ID}</h2>
+					<h2 class="modal__title ${modal.availability}" id="${modal.ID}-title">
+						Stand Number: ${modal.ID}
+					</h2>
+					<h3 class="modal__sqm">
+						Stand size: ${modal.sqm}sqm
+					</h3>
 					<button aria-label="Close Modal" class="modal__close" data-micromodal-close></button>
 				</header>
 				<main class="modal__content">
-					<h4>Size: ${modal.sqm}sqm</h4>
+					<h3 class="modal__price">
+						USD${modal.price.toLocaleString('en-US', { //  converts a number into a string using a specific locale
+							style: 'currency', // Specifies that the number should be formatted as currency.
+							currency: 'USD', // Specifies the currency to be USD (US Dollar).
+							minimumFractionDigits: 2, // Ensures that at least 2 decimal places are displayed.
+							maximumFractionDigits: 2, // Ensures that at most 2 decimal places are displayed.
+						})}
+					</h3>
 					<p>${modal.description}</p>
 				</main>
 				<footer class="modal__footer">
