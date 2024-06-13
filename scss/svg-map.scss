@@ -15,7 +15,8 @@ svg {
 	height: 100%;
 }
 
-#border {
+#border,
+.border {
 	fill: none;
 	stroke: var(--bg-black);
 	stroke-width: 4px;
@@ -25,6 +26,11 @@ svg {
 .roads,
 #roads {
 	fill: var(--bg-grey);
+}
+
+.path,
+#path {
+	fill: var(--bg-path);
 }
 
 .amenity,
@@ -99,7 +105,7 @@ text,
 
 #bg-future,
 .bg-future {
-	fill: var(--bg-future);
+	fill: var(--bg-flats-clusters);
 	stroke: var(--bg-black);
 	stroke-dasharray: 0;
 }
