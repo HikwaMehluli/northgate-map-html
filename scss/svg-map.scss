@@ -23,35 +23,28 @@ svg {
 }
 
 .roads,
-#road {
+#roads {
 	fill: var(--bg-grey);
 }
 
-.amenity-area,
-#amenity-area {
+.amenity,
+#amenity {
 	fill: var(--bg-amenity);
 }
 
-#text {
-	fill: var(--bg-black);
-	stroke-dasharray: 0;
-}
-
-#tanks,
-#open-space,
-#area {
+.reservoirs {
 	fill: var(--bg-white);
 	stroke: var(--bg-black);
 }
 
-#Buffer_Areas_and_Open_Spaces {
+.buffer-area {
 	fill: var(--bg-lawn);
 	stroke: var(--bg-black);
 	stroke-dasharray: 0;
 
-	&:hover {
-		fill: var(--bg-lawn);
-	}
+	// &:hover {
+	// 	fill: var(--bg-lawn);
+	// }
 }
 
 
@@ -59,9 +52,11 @@ svg {
 // 
 // Availablity Styling
 //
-#text,
+text,
 .text {
 	fill: var(--bg-black);
+	stroke-dasharray: 0;
+	font-weight: 600;
 }
 
 .available,
