@@ -21,10 +21,10 @@ function createModal(modal) {
 			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="${modal.ID}-title">
 				<header class="modal__header">
 					<h2 class="modal__title ${modal.availability}" id="${modal.ID}-title">Stand No. ${modal.ID}</h2>
-					<button aria-label="Clode Modal" class="modal__close" data-micromodal-close></button>
+					<button aria-label="Close Modal" class="modal__close" data-micromodal-close></button>
 				</header>
 				<main class="modal__content">
-					<h4>Stand Size: ${modal.sqm}</h4>
+					<h4>Size: ${modal.sqm}sqm</h4>
 					<p>${modal.description}</p>
 				</main>
 				<footer class="modal__footer">

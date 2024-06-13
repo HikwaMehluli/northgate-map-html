@@ -1,6 +1,6 @@
 .modal {
-	// font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-	display: none;
+	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+	// display: none;
 }
 
 .modal__overlay {
@@ -169,6 +169,7 @@ a.modal__btn {
 
 .micromodal-slide {
 	display: none;
+
 }
 
 .micromodal-slide.is-open {

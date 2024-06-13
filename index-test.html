@@ -2,33 +2,89 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Northgate - Interactive Maps</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Northgate - Interactive Maps</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
 
-    <link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/app.css">
 	<script src="./js/app.js"></script>
 </head>
 
 <body>
 	<div class="map-container">
-		<svg id="Northgate_Phase_One" class="svg" x="0px" y="0px" viewBox="0 0 4000 5065">
-			<path id="roads" class="roads" data-micromodal-trigger="2546" d="M51,4863l10,19,44,18,792,106,235-652,539-649,20-3,6,8,902,174L3957,77l-81,12L2626,305,1854,2472l-450,411L388,4137Z"/>
-			<g id="Buffer_Areas_and_Open_Spaces" data-name="Buffer Areas and Open Spaces">
-			<path id="Buffer_Area" data-name="Buffer Area" class="cls-2" d="M2731.24,286.814L2626,305,2189.02,1531.6,2198,1559l57,21,18-5Z"/>
-			<path id="Buffer_Area-2" data-name="Buffer Area" class="cls-2" d="M2185,1591l55,19,12,18-294,829-72,112-382,347-20-1-61.34-49.04L1854,2472l305-864Z"/>
-			<path id="Buffer_Area-3" data-name="Buffer Area" class="cls-2" d="M1404,2883L388,4137,51,4863l10,19,44,18,28.607,3.83L152,4893l2-24,314-678L1470,2954l-2-19Z"/>
-			<path id="Buffer_Area-4" data-name="Buffer Area" class="cls-2" d="M859,5000l14-14-422-57v7l18,12Z"/>
-			<path id="Buffer_Area-5" data-name="Buffer Area" class="cls-2" d="M430.97,4925.99L430,4933l-19,7-219-30-16-12,0.791-6.06Z"/>
-			<path id="Buffer_Area-6"  data-micromodal-trigger="2536" data-name="Buffer Area" class="cls-3" d="M1156,3507l103,84-1,91-7,398,18.15,68.38-67.11,79.87-55.77,66.39L1109,4339l-8.68,26.04-176.029-83.83L935,4023l79-52,74-89-24-48,48-35,6-242Z"/>
-			</g>
-		</svg>
 
+		<!-- data-micromodal-trigger="2536" data-tippy-content="Reserved Stand No.2536" -->
+
+		<svg id="northgate-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3908.52 4931.55">
+			<defs>
+			  <style>
+				.cls-1 {
+				  fill: #8a8c9c;
+				  stroke-miterlimit: 10;
+				}
+		  
+				.cls-1, .cls-2, .available {
+				  stroke: #000;
+				}
+		  
+				.cls-2 {
+				  fill: #749043;
+				  stroke-dasharray: 16 8;
+				}
+		  
+				.available {
+				  fill: #13a0ca;
+				}
+		  
+				.text {
+				  font-size: 14px;
+				  font-family: MyriadPro-Semibold, Myriad Pro;
+				  font-weight: 600;
+				}
+			  </style>
+			</defs>
+			<polygon id="roads" class="cls-1" points="0.56 4785.99 9.66 4805.19 54.63 4825.14 479.05 4881.48 847.38 4931 1028.77 4429.27 1083.34 4278.2 1494.12 3784.55 1620.44 3629.94 1642.67 3629.94 2249.49 3750.2 2550.63 3809.31 2789.62 3139.33 2932.1 2737.14 3076.61 2332.93 3218.59 1932.26 3354.5 1551.8 3497.49 1149.1 3648.56 725.19 3791.55 325.52 3907.76 0.64 3248.39 114.32 2576.39 231.04 1804.86 2397.1 1353.15 2807.88 1015.64 3224.72 339.09 4060.43 12.69 4764.77 0.56 4785.99"/>
+			<g id="buffer-area">
+			  <polygon id="buffer-area-2" data-tippy-content="buffer-area" class="cls-2" points="102.88 4817.69 78.46 4828.31 54.63 4825.14 9.66 4805.19 0.56 4785.99 12.69 4764.77 339.09 4060.43 1353.15 2807.88 1420.29 2859.86 1421.81 2879.19 419.68 4116.26 366.06 4163.82 102.88 4817.69"/>
+			  <polygon id="buffer-area-3" data-tippy-content="buffer-area" class="cls-2" points="128.65 4816.55 128.65 4799.5 199.51 4649.82 261.28 4678.24 403.76 4697.19 383.3 4858.62 356.75 4865.25 145.84 4837.25 128.65 4821.86 128.65 4816.55"/>
+			  <polygon id="buffer-area-4" data-tippy-content="buffer-area" class="cls-2" points="402.63 4861.02 402.63 4853.31 824.59 4909.97 822.5 4913.56 806.19 4925.46 423.85 4874.15 402.63 4861.02"/>
+			</g>
+			<g data-micromodal-trigger="2536" data-tippy-content="2536">
+			  <polygon id="bg" class="available" points="824.59 4909.97 831.03 4905.8 844.86 4866.2 838.23 4850.66 810.94 4840.43 799.76 4840.43 791.62 4906.74 824.59 4909.97"/>
+			  <text id="text" class="text" transform="translate(817.59 4894.91) rotate(-82.44)">2536</text>
+			</g>
+			<g data-micromodal-trigger="2537" data-tippy-content="2537">
+			  <polygon id="bg-2" data-tippy-content="bg" class="available" points="756.75 4901.06 765.09 4833.8 799.76 4840.43 791.62 4906.74 756.75 4901.06"/>
+			  <text id="text-2" class="text" transform="translate(779.74 4886.71) rotate(-82.44)">2537</text>
+			</g>
+			<g data-micromodal-trigger="2538" data-tippy-content="2538">
+			  <polygon id="bg-3" data-tippy-content="bg" class="available" points="722.33 4896.89 731.17 4828.68 765.09 4833.8 756.75 4901.06 722.33 4896.89"/>
+			  <text id="text-3" class="text" transform="translate(744.92 4883.58) rotate(-82.44)">2538 </text>
+			</g>
+			<g data-micromodal-trigger="2539" data-tippy-content="2539">
+			  <polygon id="bg-4" data-tippy-content="bg" class="available" points="687.47 4891.33 696.06 4825.14 731.17 4828.68 722.33 4896.89 687.47 4891.33"/>
+			  <text id="text-4" class="text" transform="translate(710.82 4878.59) rotate(-82.44)">2539</text>
+			</g>
+			<g data-micromodal-trigger="2540" data-tippy-content="2540">
+			  <polygon id="bg-5" data-tippy-content="bg" class="available" points="653.11 4886.79 661.2 4819.59 696.06 4825.14 687.47 4891.33 653.11 4886.79"/>
+			  <text id="text-5" class="text" transform="translate(675.91 4873.03) rotate(-82.44)">2540</text>
+			</g>
+			<polygon class="available" points="618.79 4882.33 626.96 4815.23 661.2 4819.59 653.11 4886.79 618.79 4882.33"/>
+			<polygon class="available" points="583.97 4877.66 592.1 4810.3 626.96 4815.23 618.79 4882.33 583.97 4877.66"/>
+			<polygon class="available" points="549.65 4873.05 558 4805.75 592.1 4810.3 583.97 4877.66 549.65 4873.05"/>
+			<polygon class="available" points="514.2 4868.29 522.94 4801.59 558 4805.75 549.65 4873.05 514.2 4868.29"/>
+			<polygon class="available" points="480.15 4863.72 488.27 4796.66 522.94 4801.59 514.2 4868.29 480.15 4863.72"/>
+			<polygon class="available" points="445.68 4859.09 453.97 4792.11 488.27 4796.66 480.15 4863.72 445.68 4859.09"/>
+			<polygon class="available" points="402.63 4853.31 409.64 4797.8 421.76 4787.94 453.97 4792.11 445.68 4859.09 402.63 4853.31"/>
+		</svg>
+		  
+		
 		<div id="map-legend" class="map-legend" style="display: none;">
 			<h2>Map Legend</h2>
 			<div class="map-legend__key">
@@ -57,7 +113,7 @@
 			</div>
 		</div>
 
-        <div class="custom-controls">
+		<div class="custom-controls">
 			<!-- <span id="reset">
                 <div class="icon-reset"></div>
             </span>
@@ -74,18 +130,42 @@
 				<div class="icon-arrow left"></div>
 			</span> -->
 			<span id="zoom-in">
-                <div class="icon-plus"></div>
-            </span>
-            <span id="zoom-out">
-                <div class="icon-minus"></div>
-            </span>
-            <span id="info" onclick="showLegend()">
-                <div class="icon-info"></div>
-            </span>
-        </div>
+				<div class="icon-plus"></div>
+			</span>
+			<span id="zoom-out">
+				<div class="icon-minus"></div>
+			</span>
+			<span id="info" onclick="showLegend()">
+				<div class="icon-info"></div>
+			</span>
+		</div>
 	</div>
-	<div id="modal-container"></div>
 
+	<!-- <button data-micromodal-trigger="1">Stand 1</button>
+	<button data-micromodal-trigger="2541">Stand 2541</button>
+	<button data-micromodal-trigger="2545">Stand 2545</button> -->
+
+	<div id="modal-container">
+		<div class="modal micromodal-slide" id="1" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				<div class="modal__container" role="dialog" aria-modal="true">
+					<header class="modal__header">
+						<h2 class="modal__title available">Stand No. 1</h2>
+						<button class="modal__close" data-micromodal-close></button>
+					</header>
+					<main class="modal__content">
+						<h4>Size: 100sqm</h4>
+						<p>Description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse cupiditate veniam in ipsam, adipisci ratione totam enim est neque natus doloribus cum perspiciatis exercitationem blanditiis. Rem in doloribus quis similique! Manual</p>
+					</main>
+					<footer class="modal__footer">
+						<a class="modal__btn" href="https://staging.northgate.co.zw/" target="_blank">Buy Stand</a>
+						<a class="modal__btn" data-micromodal-close>Close</a>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	<script src="./api/stands.js"></script>
 	<script>
 		function showLegend() {
@@ -98,4 +178,5 @@
 		}
 	</script>
 </body>
+
 </html>
