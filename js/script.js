@@ -4,14 +4,24 @@ import svgPanZoom from'./svg-pan-zoom.min.js';
 import './hammer.js';
 
 window.addEventListener("load", function () {
-// document.addEventListener("DOMContentLoaded", function () {
+// document.addEventListener('DOMContentLoaded', () => {
 	// 
 	// TippyJS, Tooltip Options - https://atomiks.github.io/tippyjs/v6/customization/
-	// 
-	tippy('[data-tippy-content]', {
-		arrow: true,
-		delay: [100, 100],
-	});
+	//
+
+	// detect if the user is on a mobile device
+	function isMobileDevice() {
+		return /Mobi|Android/i.test(navigator.userAgent);
+	}
+	
+	// Initialize Tippy.js only on non-mobile devices
+	if (!isMobileDevice()) {
+        tippy('[data-tippy-content]', {
+			arrow: true,
+			delay: [100, 100],
+		});
+    }
+	
 
 
 	// 
