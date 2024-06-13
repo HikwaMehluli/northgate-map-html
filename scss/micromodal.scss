@@ -16,13 +16,14 @@
 }
 
 .modal__container {
-	background-color: #fff;
+	background-color: var(--bg-white);
+	border-radius: 5px;
+	box-sizing: border-box;
 	padding: 30px;
+	width: 95%;
 	max-width: 500px;
 	max-height: 100vh;
-	border-radius: 4px;
 	overflow-y: auto;
-	box-sizing: border-box;
 }
 
 .modal__header {
@@ -45,6 +46,7 @@
 		&.sold,
 		&.reserved {
 			&::before {
+				border-radius: 5px 0 0 0;
 				color: var(--bg-white);
 				display: inline;				
 				padding: 5px;
