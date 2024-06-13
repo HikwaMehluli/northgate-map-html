@@ -8,10 +8,10 @@ window.addEventListener("load", function () {
 	// 
 	// TippyJS, Tooltip Options - https://atomiks.github.io/tippyjs/v6/customization/
 	// 
-	// tippy('[data-tippy-content]', {
-	// 	arrow: true,
-	// 	delay: [100, 100],
-	// });
+	tippy('[data-tippy-content]', {
+		arrow: true,
+		delay: [100, 100],
+	});
 
 
 	// 
@@ -50,7 +50,7 @@ window.addEventListener("load", function () {
 				// Variables
 				// 
 				var instance = options.instance,
-					initialScale = 3, // Initial zoom level = 2
+					initialScale = 2, // Initial zoom level = 2
 					pannedX = 0,
 					pannedY = 0
 					
@@ -59,7 +59,7 @@ window.addEventListener("load", function () {
 				instance.zoom(initialScale);
 
 				// set initial pan area
-				instance.pan({x: 200, y: -1750});
+				// instance.pan({x: 200, y: -1750});
 
 
 				// 
