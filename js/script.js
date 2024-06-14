@@ -1,10 +1,16 @@
 import tippy from 'tippy.js';
 import MicroModal from 'micromodal';
+
+// The two scripts below are imported from /js folder
 import svgPanZoom from'./svg-pan-zoom.min.js';
 import './hammer.js';
 
-window.addEventListener("load", function () {
-// document.addEventListener('DOMContentLoaded', () => {
+
+window.addEventListener('load', function() {
+	console.log('Page fully loaded');
+
+
+	
 	// 
 	// TippyJS, Tooltip Options - https://atomiks.github.io/tippyjs/v6/customization/
 	//
@@ -28,6 +34,7 @@ window.addEventListener("load", function () {
 	// MicroModal - https://micromodal.vercel.app/#usage
 	//
 	MicroModal.init();
+
 
 
 	//

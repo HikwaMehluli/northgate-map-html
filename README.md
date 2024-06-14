@@ -2,17 +2,24 @@
 
 An Interactive Map for a real estate development in harare, Zimbabwe
 
-Demo Page - https://northgate-maps.netlify.app
+Demo Page - https://northgate-map-html.netlify.app
 
 Live Page - 
 
 ## Production Dependencies
-#### Tippy, Micromodal
+#### TippyJS Micromodal.JS
 
 ```
 npm i tippy.js
 
-npm install micromodal --save
+npm i micromodal --save
+```
+
+#### svgPanZoom.JS, Hammer.JS
+svgPanZoom & HammerJS are imported from /js folder into /js/script.js and compiled using webpack
+```
+import svgPanZoom from'./svg-pan-zoom.min.js';
+import './hammer.js';
 ```
 
 ## Development Dependencies
