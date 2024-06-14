@@ -67,6 +67,14 @@ svg {
 	// }
 }
 
+.flats-clusters,
+#flats-clusters,
+[data-name="flats-clusters"] {
+	fill: var(--bg-flats-clusters);
+	stroke: var(--bg-black);
+	stroke-dasharray: 0;
+}
+
 
 
 // 
@@ -116,21 +124,4 @@ text,
 
 .under-offer {
 	fill: var(--bg-under-offer);
-}
-
-// .sold~.text,
-// .sold~#text,
-// .sold~[data-name="text"],
-// .booked~.text,
-// .booked~#text,
-// .booked~.sold~[data-name="text"] {
-// 	fill: var(--bg-white);
-// }
-
-.flats-clusters,
-#flats-clusters,
-[data-name="flats-clusters"] {
-	fill: var(--bg-flats-clusters);
-	stroke: var(--bg-black);
-	stroke-dasharray: 0;
 }

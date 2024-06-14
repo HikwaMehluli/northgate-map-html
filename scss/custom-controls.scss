@@ -20,22 +20,31 @@
 		transition: var(--transition);
 
 		&:hover {
-			background-color: var(--bg-available);
+			background-color: var(--bg-sold);
+			color: var(--bg-white);
 		}
 	}
 
 	// Rotate Icons
 	.icon-arrow.up {
 		transform: rotate(90deg);
+		position: relative;
+		bottom: 2px;
 	}
 	.icon-arrow.right {
 		transform: rotate(180deg);
+		position: relative;
+		left: 2px;
 	}
 	.icon-arrow.down {
 		transform: rotate(270deg);
+		position: relative;
+		top: 2px;
 	}
 	.icon-arrow.left {
 		// transform: rotate(270deg);
+		position: relative;
+		right: 2px;
 	}
 }
 
@@ -77,12 +86,6 @@
 }
 
 #info {
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
-}
-
-#reset {
 	position: absolute;
 	right: 0px;
 	bottom: 0px;

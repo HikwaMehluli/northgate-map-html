@@ -1,4 +1,6 @@
-Fontello - Typicons v2.0.2
+Fontello - https://fontello.com/ - Typicons v2.0.2
+- arrow
+- close
+- info
 - minus
 - plus
-- refresh

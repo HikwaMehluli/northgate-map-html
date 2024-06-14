@@ -40,12 +40,12 @@ body {
 
 @font-face {
 	font-family: 'interactive-map';
-	src: url('../font/interactive-map.eot?50611948');
-	src: url('../font/interactive-map.eot?50611948#iefix') format('embedded-opentype'),
-		 url('../font/interactive-map.woff2?50611948') format('woff2'),
-		 url('../font/interactive-map.woff?50611948') format('woff'),
-		 url('../font/interactive-map.ttf?50611948') format('truetype'),
-		 url('../font/interactive-map.svg?50611948#interactive-map') format('svg');
+	src: url('../font/interactive-map.eot?57542565');
+	src: url('../font/interactive-map.eot?57542565#iefix') format('embedded-opentype'),
+		url('../font/interactive-map.woff2?57542565') format('woff2'),
+		url('../font/interactive-map.woff?57542565') format('woff'),
+		url('../font/interactive-map.ttf?57542565') format('truetype'),
+		url('../font/interactive-map.svg?57542565#interactive-map') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -72,23 +72,18 @@ body {
 // Render Icons & Color
 .icon-minus:before {
 	content: '\e800';
-	color: var(--color-white);
 }
 .icon-plus:before {
 	content: '\e801';
-	color: var(--color-white);
 }
 .icon-arrow:before {
-	content: '\e802';
-	color: var(--color-white);
-}
-.icon-reset:before {
 	content: '\e803';
-	color: var(--color-white);
 }
 .icon-info:before {
 	content: '\e804';
-	color: var(--color-white);
+}
+.icon-close:before {
+	content: '\e805';
 }
 
 // Import SCSS
