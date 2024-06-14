@@ -23,19 +23,25 @@ svg {
 	stroke-dasharray: 8 4;
 }
 
-.roads,
-#roads {
+.road,
+#road {
 	fill: var(--bg-grey);
+	stroke: var(--bg-black);
+	stroke-dasharray: 0;
 }
 
 .path,
 #path {
 	fill: var(--bg-path);
+	stroke: var(--bg-black);
+	stroke-dasharray: 0;
 }
 
 .amenity,
 #amenity {
 	fill: var(--bg-amenity);
+	stroke: var(--bg-black);
+	stroke-dasharray: 0;
 }
 
 .reservoirs {
