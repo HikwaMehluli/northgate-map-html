@@ -15,8 +15,9 @@ svg {
 	height: 100%;
 }
 
+.border,
 #border,
-.border {
+[data-name="border"] {
 	fill: none;
 	stroke: var(--bg-black);
 	stroke-width: 4px;
@@ -24,32 +25,39 @@ svg {
 }
 
 .road,
-#road {
+#road,
+[data-name="road"] {
 	fill: var(--bg-grey);
 	stroke: var(--bg-black);
 	stroke-dasharray: 0;
 }
 
 .path,
-#path {
+#path,
+[data-name="path"] {
 	fill: var(--bg-path);
 	stroke: var(--bg-black);
 	stroke-dasharray: 0;
 }
 
 .amenity,
-#amenity {
+#amenity,
+[data-name="amenity"] {
 	fill: var(--bg-amenity);
 	stroke: var(--bg-black);
 	stroke-dasharray: 0;
 }
 
-.reservoirs {
+.reservoirs,
+#reservoirs,
+[data-name="reservoirs"] {
 	fill: var(--bg-white);
 	stroke: var(--bg-black);
 }
 
-.buffer-area {
+.buffer-area,
+#buffer-area,
+[data-name="buffer-area"] {
 	fill: var(--bg-lawn);
 	stroke: var(--bg-black);
 	stroke-dasharray: 0;
@@ -65,7 +73,9 @@ svg {
 // Availablity Styling
 //
 text,
-.text {
+.text,
+#text,
+[data-name="text"] {
 	fill: var(--bg-black);
 	stroke-dasharray: 0;
 	font-weight: 600;
@@ -82,9 +92,10 @@ text,
 		fill: var(--bg-black);
 		cursor: pointer;
 
-		// ~.text
+		~text
+		~.text,
 		~#text,
-		~.text {
+		~[data-name="text"] {
 			fill: var(--bg-white);
 		}
 	}
@@ -110,7 +121,8 @@ text,
 }
 
 #flats-clusters,
-.flats-clusters {
+.flats-clusters,
+[data-name="flats-clusters"] {
 	fill: var(--bg-flats-clusters);
 	stroke: var(--bg-black);
 	stroke-dasharray: 0;
