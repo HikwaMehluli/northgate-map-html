@@ -5,15 +5,26 @@
 	--bg-black: #222222;
 	--bg-white: #ffffff;
 	--bg-grey: #8a8c9c;
-	--bg-path: #c5c9e7;
+	
 
 	// SVG Map
-	--bg-available: #13a0ca;
-	--bg-sold: #e6616e;
-	--bg-reserved: #992a3b;
-	--bg-lawn: #81a541;
-	--bg-amenity: #fabc43;
-	--bg-flats-clusters: #b9c7b7;
+	--bg-available: #caf0f8;
+	// #caf0f8 - #13a0ca Available
+	
+	--bg-sold: #0077b6;
+	// #0077b6 - #e6616e Sold
+
+	--bg-booked: #90e0ef;
+	// #90e0ef - #992a3b Booked
+
+	--bg-under-offer: #00b4d8;
+	// #00b4d8 - #992a3b Under Offer
+
+
+	--bg-buffer-area: #8fbb43;
+	--bg-amenity: #ecbf65;
+	--bg-flats-clusters: #b0c7ad;
+	--bg-path: #b8c5dd;
 
 	// Other Variables
 	--transition: all .5s;

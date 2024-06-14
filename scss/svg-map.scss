@@ -58,12 +58,12 @@ svg {
 .buffer-area,
 #buffer-area,
 [data-name="buffer-area"] {
-	fill: var(--bg-lawn);
+	fill: var(--bg-buffer-area);
 	stroke: var(--bg-black);
 	stroke-dasharray: 0;
 
 	// &:hover {
-	// 	fill: var(--bg-lawn);
+	// 	fill: var(--bg-buffer-area);
 	// }
 }
 
@@ -83,7 +83,8 @@ text,
 
 .available,
 .sold,
-.reserved {
+.booked,
+.under-offer {
 	stroke: var(--bg-black);
 	stroke-dasharray: 0;
 	transition: var(--transition);
@@ -109,19 +110,25 @@ text,
 	fill: var(--bg-sold);
 }
 
-.reserved {
-	fill: var(--bg-reserved);
+.booked {
+	fill: var(--bg-booked);
 }
 
-.sold~#text,
-.sold~.text,
-.reserved~#text,
-.reserved~.text {
-	fill: var(--bg-white);
+.under-offer {
+	fill: var(--bg-under-offer);
 }
 
-#flats-clusters,
+// .sold~.text,
+// .sold~#text,
+// .sold~[data-name="text"],
+// .booked~.text,
+// .booked~#text,
+// .booked~.sold~[data-name="text"] {
+// 	fill: var(--bg-white);
+// }
+
 .flats-clusters,
+#flats-clusters,
 [data-name="flats-clusters"] {
 	fill: var(--bg-flats-clusters);
 	stroke: var(--bg-black);

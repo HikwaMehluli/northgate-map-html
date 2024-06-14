@@ -44,10 +44,11 @@
 		
 		&.available,
 		&.sold,
-		&.reserved {
+		&.booked,
+		&.under-offer {
 			&::before {
 				border-radius: 5px 0 0 0;
-				color: var(--bg-white);
+				color: var(--bg-blue);
 				display: inline;				
 				padding: 5px;
 				margin: 0 10px 10px 0;
@@ -69,10 +70,16 @@
 				background-color: var(--bg-sold);
 			}
 		}
-		&.reserved {
+		&.booked {
 			&::before {
-				content: "Reserved";
-				background-color: var(--bg-reserved);
+				content: "Booked";
+				background-color: var(--bg-booked);
+			}
+		}
+		&.under-offer {
+			&::before {
+				content: "Under Offer";
+				background-color: var(--bg-under-offer);
 			}
 		}
 	}

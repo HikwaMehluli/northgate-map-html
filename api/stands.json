@@ -4,21 +4,21 @@
 		"sqm": 800,
 		"price": 90000,
 		"description": "Spacious residential stand with scenic views, perfect for building your dream home.",
-		"availability": "available"
+		"availability": "under-offer"
 	},
 	{
 		"ID": 2537,
 		"sqm": 600,
 		"price": 75000,
 		"description": "Cozy corner lot surrounded by mature trees, ideal for a small family home.",
-		"availability": "available"
+		"availability": "under-offer"
 	},
 	{
 		"ID": 2538,
 		"sqm": 1000,
 		"price": 110000,
 		"description": "Large plot of land in a quiet neighborhood, suitable for a luxurious estate.",
-		"availability": "reserved"
+		"availability": "booked"
 	},
 	{
 		"ID": 2539,
@@ -39,7 +39,7 @@
 		"sqm": 632,
 		"price": 87000,
 		"description": "Serene environment with beautiful landscape.",
-		"availability": "available"
+		"availability": "under-offer"
 	},
 	{
 		"ID": 2542,
@@ -53,7 +53,7 @@
 		"sqm": 790,
 		"price": 80000,
 		"description": "Great stand with easy access to schools.",
-		"availability": "reserved"
+		"availability": "booked"
 	},
 	{
 		"ID": 2544,
@@ -80,15 +80,8 @@
 		"ID": 2547,
 		"sqm": 880,
 		"price": 100000,
-		"description": "Elevated position with stunning sunsets.",
-		"availability": "reserved"
-	},
-	{
-		"ID": 2548,
-		"sqm": 1120,
-		"price": 118000,
-		"description": "Expansive land with numerous possibilities.",
-		"availability": "sold"
+		"description": "Elevated position with stunning sunset views of the estate.",
+		"availability": "booked"
 	},
 	{
 		"ID": 2549,
@@ -101,15 +94,15 @@
 		"ID": 2550,
 		"sqm": 780,
 		"price": 83000,
-		"description": "Peaceful area with a lot of greenery.",
-		"availability": "reserved"
+		"description": "Peaceful area with a lots of greenery. Ideal for a starter home.",
+		"availability": "under-offer"
 	},
 	{
 		"ID": 2551,
 		"sqm": 550,
 		"price": 60000,
-		"description": "Stand with modern utilities available.",
-		"availability": "available"
+		"description": "Stand with modern utilities available plus lots of greenery.",
+		"availability": "booked"
 	},
 	{
 		"ID": 2552,
@@ -123,7 +116,7 @@
 		"sqm": 670,
 		"price": 75000,
 		"description": "Great neighborhood, perfect for families.",
-		"availability": "reserved"
+		"availability": "booked"
 	},
 	{
 		"ID": 2554,
@@ -151,7 +144,7 @@
 		"sqm": 845,
 		"price": 106000,
 		"description": "Elevated lot with panoramic views.",
-		"availability": "reserved"
+		"availability": "booked"
 	},
 	{
 		"ID": 2558,
@@ -172,7 +165,7 @@
 		"sqm": 710,
 		"price": 80000,
 		"description": "Well-located, close to public transport.",
-		"availability": "reserved"
+		"availability": "booked"
 	},
 	{
 		"ID": 2561,
@@ -193,7 +186,7 @@
 		"sqm": 1130,
 		"price": 119000,
 		"description": "Large stand in a sought-after location.",
-		"availability": "reserved"
+		"availability": "booked"
 	},
 	{
 		"ID": 2564,
@@ -214,7 +207,7 @@
 		"sqm": 540,
 		"price": 56000,
 		"description": "Affordable with easy access to city center.",
-		"availability": "reserved"
+		"availability": "booked"
 	},
 	{
 		"ID": 2567,
@@ -235,7 +228,7 @@
 		"sqm": 1200,
 		"price": 119000,
 		"description": "Expansive area for a large house and garden.",
-		"availability": "reserved"
+		"availability": "booked"
 	},
 	{
 		"ID": 2570,
@@ -256,7 +249,7 @@
 		"sqm": 560,
 		"price": 61000,
 		"description": "Affordable plot in a developing area.",
-		"availability": "reserved"
+		"availability": "booked"
 	},
 	{
 		"ID": 2573,
@@ -277,7 +270,7 @@
 		"sqm": 1030,
 		"price": 109000,
 		"description": "Spacious lot with room for a garden.",
-		"availability": "reserved"
+		"availability": "booked"
 	},
 	{
 		"ID": 2576,
@@ -298,20 +291,20 @@
 		"sqm": 720,
 		"price": 80000,
 		"description": "Elevated position with beautiful views.",
-		"availability": "reserved"
+		"availability": "booked"
 	},
 	{
 		"ID": 2579,
 		"sqm": 940,
 		"price": 95000,
 		"description": "Large stand with a lot of potential.",
-		"availability": "sold"
+		"availability": "booked"
 	},
 	{
 		"ID": 2580,
 		"sqm": 410,
 		"price": 52000,
 		"description": "Compact and affordable, ideal for a new family.",
-		"availability": "available"
+		"availability": "under-offer"
 	}
 ]
