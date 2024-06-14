@@ -14,7 +14,7 @@ window.addEventListener("load", function () {
 		return /Mobi|Android/i.test(navigator.userAgent);
 	}
 	
-	// Initialize Tippy.js only on non-mobile devices
+	// Initialize Tippy.js and remove on mobile devices
 	if (!isMobileDevice()) {
         tippy('[data-tippy-content]', {
 			arrow: true,
@@ -69,7 +69,10 @@ window.addEventListener("load", function () {
 				instance.zoom(initialScale);
 
 				// set initial pan area
-				instance.pan({x: 200, y: -1750});
+				if (!isMobileDevice()) {
+					instance.pan({x: 200, y: -1750});
+				}
+				
 
 
 				// 
