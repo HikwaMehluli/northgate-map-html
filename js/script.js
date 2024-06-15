@@ -4,7 +4,7 @@ import svgPanZoom from './svg-pan-zoom.min.js';
 import './hammer.js';
 
 window.addEventListener('load', function () {
-	console.log('%cMade by Digital Afros', 'font-size: 12px;');
+	console.log('%c Made by Digital Afros', 'font-size: 12px;');
 
 
 
@@ -12,18 +12,8 @@ window.addEventListener('load', function () {
 	// Detect Mobile Device. This function has been used inside TippyJS & svgPanZoomJS
 	//
 	function isMobileDevice() {
-		const userAgent = navigator.userAgent.toLowerCase();
-		if (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/.test(userAgent)) {
-			if (/tablet|ipad/.test(userAgent)) {
-				return "Tablet";
-			} else if (/mobile|iphone|ipod|blackberry/.test(userAgent)) {
-				return "Phone";
-			}
-		}
-		return "Desktop";
+		return /iPhone|iPad|iPod|Android|Windows Phone/i.test(navigator.userAgent);
 	}
-	const deviceType = isMobileDevice();
-	console.log(`User is on a ${deviceType}.`);
 
 
 
@@ -182,10 +172,12 @@ window.addEventListener('load', function () {
 
 				// Set initial zoom level
 				instance.zoom(initialScale);
-
-				// set initial pan area
+				
+				// Set initial pan
 				if (!isMobileDevice()) {
-					instance.pan({ x: 200, y: -1750 });
+					instance.pan({ x: 200, y: -1765 });
+				} else {
+					instance.pan({ x: 0, y: 0 });
 				}
 
 
