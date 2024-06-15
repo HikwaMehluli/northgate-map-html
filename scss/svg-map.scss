@@ -85,8 +85,8 @@ text,
 #text,
 [data-name="text"] {
 	fill: var(--bg-black);
-	stroke-dasharray: 0;
-	font-weight: 600;
+	stroke: var(--bg-black);
+	stroke-width: .4px;
 }
 
 .available,
