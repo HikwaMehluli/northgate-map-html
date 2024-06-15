@@ -176,8 +176,6 @@ window.addEventListener('load', function () {
 				// Set initial pan
 				if (!isMobileDevice()) {
 					instance.pan({ x: 200, y: -1765 });
-				} else {
-					instance.pan({ x: 0, y: 0 });
 				}
 
 
