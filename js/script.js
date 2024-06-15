@@ -114,13 +114,14 @@ window.addEventListener('load', function () {
 				}
 
 				// Update data-tippy-content attribute
-				gElement.setAttribute('data-tippy-content', `Stand No.${item.ID}, ${item.sqm}sqm`);
+				gElement.setAttribute('data-tippy-content', `<h3>Stand No.${item.ID}</h3>`);
 			}
 
 			// Initialize Tippy.js and remove on mobile devices
 			if (!isMobileDevice()) {
 				tippy('[data-tippy-content]', {
 					arrow: true,
+					allowHTML: true,
 					delay: [100, 100],
 				});
 			}
