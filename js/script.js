@@ -5,33 +5,21 @@ import './hammer.js';
 
 window.addEventListener('load', function () {
 	console.log('%c Made by Digital Afros', 'font-size: 12px;');
-	
 
-	// 
-	// TippyJS, Tooltip Options - https://atomiks.github.io/tippyjs/v6/customization/
-	//
 
-	// detect if the user is on a mobile device
+	// Detect if the user is on a mobile device. This function has been used inside TippyJS & svgPanZoomJS
 	function isMobileDevice() {
 		return /Mobi|Android/i.test(navigator.userAgent);
 	}
-
-	// Initialize Tippy.js and remove on mobile devices
-	if (!isMobileDevice()) {
-		tippy('[data-tippy-content]', {
-			arrow: true,
-			delay: [100, 100],
-		});
-	}
-
-
+	
 
 	// 
 	// MicroModal - https://micromodal.vercel.app/#usage
+	// &
+	// TippyJS, Tooltip Options - https://atomiks.github.io/tippyjs/v6/customization/
 	//
-	// MicroModal.init();
 
-	// Get sample API endpoint
+	// Get API endpoint
 	const apiEndpoint = './api/stands.json';
 
 	// Fetch modal data from apiEndpoint
@@ -124,6 +112,17 @@ window.addEventListener('load', function () {
 				if (textElement) {
 					textElement.textContent = item.ID; // Set text to ID
 				}
+
+				// Update data-tippy-content attribute
+				gElement.setAttribute('data-tippy-content', `Stand No.${item.ID}, ${item.sqm}sqm`);
+			}
+
+			// Initialize Tippy.js and remove on mobile devices
+			if (!isMobileDevice()) {
+				tippy('[data-tippy-content]', {
+					arrow: true,
+					delay: [100, 100],
+				});
 			}
 		});
 	}
