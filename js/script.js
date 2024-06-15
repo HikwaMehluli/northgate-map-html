@@ -4,14 +4,28 @@ import svgPanZoom from './svg-pan-zoom.min.js';
 import './hammer.js';
 
 window.addEventListener('load', function () {
-	console.log('%c Made by Digital Afros', 'font-size: 12px;');
+	console.log('%cMade by Digital Afros', 'font-size: 12px;');
 
 
-	// Detect if the user is on a mobile device. This function has been used inside TippyJS & svgPanZoomJS
+
+	// 
+	// Detect Mobile Device. This function has been used inside TippyJS & svgPanZoomJS
+	//
 	function isMobileDevice() {
-		return /Mobi|Android/i.test(navigator.userAgent);
+		const userAgent = navigator.userAgent.toLowerCase();
+		if (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/.test(userAgent)) {
+			if (/tablet|ipad/.test(userAgent)) {
+				return "Tablet";
+			} else if (/mobile|iphone|ipod|blackberry/.test(userAgent)) {
+				return "Phone";
+			}
+		}
+		return "Desktop";
 	}
-	
+	const deviceType = isMobileDevice();
+	console.log(`User is on a ${deviceType}.`);
+
+
 
 	// 
 	// MicroModal - https://micromodal.vercel.app/#usage
@@ -52,11 +66,11 @@ window.addEventListener('load', function () {
 					<main class="modal__content">
 						<h3 class="modal__price">
 							USD${modal.price.toLocaleString('en-US', { //  converts a number into a string using a specific locale
-								style: 'currency', // Specifies that the number should be formatted as currency.
-								currency: 'USD', // Specifies the currency to be USD (US Dollar).
-								minimumFractionDigits: 2, // Ensures that at least 2 decimal places are displayed.
-								maximumFractionDigits: 2, // Ensures that at most 2 decimal places are displayed.
-							})}
+			style: 'currency', // Specifies that the number should be formatted as currency.
+			currency: 'USD', // Specifies the currency to be USD (US Dollar).
+			minimumFractionDigits: 2, // Ensures that at least 2 decimal places are displayed.
+			maximumFractionDigits: 2, // Ensures that at most 2 decimal places are displayed.
+		})}
 						</h3>
 						<p>${modal.description}</p>
 					</main>
