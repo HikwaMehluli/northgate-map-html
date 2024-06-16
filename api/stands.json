@@ -306,5 +306,1139 @@
 		"price": 52000,
 		"description": "Compact and affordable, ideal for a new family.",
 		"availability": "under-offer"
-	}
+	},
+	{
+		"ID": 2581,
+		"sqm": 1200,
+		"price": 65800,
+		"description": "A prime location for your dream home with spacious grounds.",
+		"availability": "available"
+	},
+	{
+		"ID": 2582,
+		"sqm": 500,
+		"price": 85000,
+		"description": "An ideal spot for a cozy residence, close to amenities.",
+		"availability": "sold"
+	},
+	{
+		"ID": 2583,
+		"sqm": 400,
+		"price": 48000,
+		"description": "Affordable and well-located plot, perfect for investment.",
+		"availability": "available"
+	},
+	{
+		"ID": 2584,
+		"sqm": 1200,
+		"price": 112000,
+		"description": "Expansive lot with great potential for a large family home.",
+		"availability": "booked"
+	},
+	{
+		"ID": 2585,
+		"sqm": 400,
+		"price": 55000,
+		"description": "A fantastic piece of land for a small but elegant house.",
+		"availability": "available"
+	},
+	{
+		"ID": 2586,
+		"sqm": 500,
+		"price": 75000,
+		"description": "Perfect for a starter home, in a peaceful neighborhood.",
+		"availability": "under-offer"
+	},
+	{
+		"ID": 2587,
+		"sqm": 1200,
+		"price": 99000,
+		"description": "Great investment opportunity with ample space.",
+		"availability": "available"
+	},
+	{
+		"ID": 2588,
+		"sqm": 500,
+		"price": 80000,
+		"description": "A well-sized plot for a comfortable and modern home.",
+		"availability": "available"
+	},
+	{
+		"ID": 2589,
+		"sqm": 400,
+		"price": 52000,
+		"description": "Affordable plot, ideal for a compact, efficient home.",
+		"availability": "sold"
+	},
+	{
+		"ID": 2590,
+		"sqm": 1200,
+		"price": 110000,
+		"description": "Expansive grounds, perfect for a luxurious residence.",
+		"availability": "available"
+	},
+	{
+		"ID": 2591,
+		"sqm": 400,
+		"price": 47000,
+		"description": "A great bargain, perfect for a small family home.",
+		"availability": "available"
+	},
+	{
+		"ID": 2592,
+		"sqm": 500,
+		"price": 92000,
+		"description": "Excellent location for a new home, close to schools.",
+		"availability": "under-offer"
+	},
+	{
+		"ID": 2593,
+		"sqm": 1200,
+		"price": 115000,
+		"description": "Large plot with potential for a garden and more.",
+		"availability": "sold"
+	},
+	{
+		"ID": 2594,
+		"sqm": 400,
+		"price": 68000,
+		"description": "Compact lot, ideal for a modern urban house.",
+		"availability": "available"
+	},
+	{
+		"ID": 2595,
+		"sqm": 500,
+		"price": 60000,
+		"description": "A good-sized plot in a friendly community.",
+		"availability": "available"
+	},
+	{
+		"ID": 2596,
+		"sqm": 1200,
+		"price": 106000,
+		"description": "Ample space for a large home with potential for future expansion.",
+		"availability": "booked"
+	},
+	{
+		"ID": 2597,
+		"sqm": 400,
+		"price": 56000,
+		"description": "A perfect choice for a small but elegant home.",
+		"availability": "available"
+	},
+	{
+		"ID": 2598,
+		"sqm": 500,
+		"price": 73000,
+		"description": "Ideal for a starter home, in a growing area.",
+		"availability": "sold"
+	},
+	{
+		"ID": 2599,
+		"sqm": 1200,
+		"price": 108000,
+		"description": "Great plot for a spacious family home.",
+		"availability": "available"
+	},
+	{
+		"ID": 2600,
+		"sqm": 400,
+		"price": 50000,
+		"description": "Affordable plot, ideal for a small residence.",
+		"availability": "available"
+	},
+	{
+		"ID": 2601,
+		"sqm": 500,
+		"price": 90000,
+		"description": "Excellent location with plenty of potential.",
+		"availability": "under-offer"
+	},
+	{
+		"ID": 2602,
+		"sqm": 1200,
+		"price": 114000,
+		"description": "Large lot with beautiful surroundings.",
+		"availability": "available"
+	},
+	{
+		"ID": 2603,
+		"sqm": 400,
+		"price": 61000,
+		"description": "Well-priced plot, perfect for a starter home.",
+		"availability": "available"
+	},
+	{
+		"ID": 2604,
+		"sqm": 500,
+		"price": 86000,
+		"description": "A cozy plot in a quiet neighborhood.",
+		"availability": "booked"
+	},
+	{
+		"ID": 2605,
+		"sqm": 1200,
+		"price": 118000,
+		"description": "Expansive grounds, ideal for a large family home.",
+		"availability": "available"
+	},
+	{
+		"ID": 2606,
+		"sqm": 400,
+		"price": 68000,
+		"description": "A great choice for a small but comfortable home.",
+		"availability": "available"
+	},
+	{
+		"ID": 2607,
+		"sqm": 500,
+		"price": 79000,
+		"description": "A well-situated plot for a cozy residence.",
+		"availability": "sold"
+	},
+	{
+		"ID": 2608,
+		"sqm": 1200,
+		"price": 112000,
+		"description": "Plenty of space for a luxurious and spacious home.",
+		"availability": "available"
+	},
+	{
+		"ID": 2609,
+		"sqm": 400,
+		"price": 56000,
+		"description": "Affordable and ideal for a compact home.",
+		"availability": "available"
+	},
+	{
+		"ID": 2610,
+		"sqm": 500,
+		"price": 95000,
+		"description": "Great location for a family home, with nearby parks.",
+		"availability": "under-offer"
+	},
+	{
+		"ID": 2611,
+		"sqm": 1200,
+		"price": 117000,
+		"description": "Large lot with fantastic development potential.",
+		"availability": "available"
+	},
+	{
+		"ID": 2612,
+		"sqm": 400,
+		"price": 60000,
+		"description": "An excellent option for a starter home in a peaceful area.",
+		"availability": "booked"
+	},
+	{
+		"ID": 2613,
+		"sqm": 500,
+		"price": 73000,
+		"description": "Ideal for a comfortable and modern home.",
+		"availability": "available"
+	},
+	{
+		"ID": 2614,
+		"sqm": 1200,
+		"price": 105000,
+		"description": "Expansive grounds, perfect for a large and beautiful home.",
+		"availability": "available"
+	},
+	{
+		"ID": 2616,
+		"sqm": 500,
+		"price": 72300,
+		"description": "Prime location near the park with excellent views.",
+		"availability": "available"
+	},
+	{
+		"ID": 2617,
+		"sqm": 1200,
+		"price": 95000,
+		"description": "Large stand suitable for a family home.",
+		"availability": "sold"
+	},
+	{
+		"ID": 2618,
+		"sqm": 400,
+		"price": 60000,
+		"description": "Affordable stand close to amenities.",
+		"availability": "available"
+	},
+	{
+		"ID": 2619,
+		"sqm": 1200,
+		"price": 112000,
+		"description": "Spacious and ideal for development.",
+		"availability": "booked"
+	},
+	{
+		"ID": 2620,
+		"sqm": 500,
+		"price": 80000,
+		"description": "Perfect stand for a modern residence.",
+		"availability": "available"
+	},
+	{
+		"ID": 2621,
+		"sqm": 400,
+		"price": 55000,
+		"description": "Quiet area, close to the community center.",
+		"availability": "under-offer"
+	},
+	{
+		"ID": 2622,
+		"sqm": 1200,
+		"price": 115000,
+		"description": "Large stand with beautiful landscape potential.",
+		"availability": "available"
+	},
+	{
+		"ID": 2623,
+		"sqm": 500,
+		"price": 75000,
+		"description": "Near the main road, ideal for commercial use.",
+		"availability": "sold"
+	},
+	{
+		"ID": 2624,
+		"sqm": 400,
+		"price": 58000,
+		"description": "Great investment opportunity in a growing area.",
+		"availability": "available"
+	},
+	{
+		"ID": 2625,
+		"sqm": 1200,
+		"price": 102000,
+		"description": "Spacious lot with excellent building potential.",
+		"availability": "available"
+	},
+	{
+		"ID": 2626,
+		"sqm": 500,
+		"price": 92000,
+		"description": "Conveniently located near schools and shops.",
+		"availability": "booked"
+	},
+	{
+		"ID": 2627,
+		"sqm": 400,
+		"price": 61000,
+		"description": "Perfect for a cozy starter home.",
+		"availability": "available"
+	},
+	{
+		"ID": 2628,
+		"sqm": 1200,
+		"price": 119000,
+		"description": "Prime real estate with scenic views.",
+		"availability": "available"
+	},
+	{
+		"ID": 2629,
+		"sqm": 500,
+		"price": 78000,
+		"description": "Near the city center, ideal for development.",
+		"availability": "sold"
+	},
+	{
+		"ID": 2630,
+		"sqm": 400,
+		"price": 50000,
+		"description": "Affordable option with great potential.",
+		"availability": "available"
+	},
+	{
+		"ID": 2631,
+		"sqm": 1200,
+		"price": 104000,
+		"description": "Large lot, perfect for a luxurious estate.",
+		"availability": "under-offer"
+	},
+	{
+		"ID": 2632,
+		"sqm": 500,
+		"price": 73000,
+		"description": "Excellent location, close to recreational areas.",
+		"availability": "available"
+	},
+	{
+		"ID": 2633,
+		"sqm": 400,
+		"price": 57000,
+		"description": "Ideal for a small family residence.",
+		"availability": "available"
+	},
+	{
+		"ID": 2634,
+		"sqm": 1200,
+		"price": 113000,
+		"description": "Spacious stand, perfect for a dream home.",
+		"availability": "sold"
+	},
+	{
+		"ID": 2635,
+		"sqm": 500,
+		"price": 85000,
+		"description": "Centrally located with easy access to highways.",
+		"availability": "available"
+	},
+	{
+		"ID": 2636,
+		"sqm": 400,
+		"price": 59000,
+		"description": "Great for a cozy home with a nice garden.",
+		"availability": "booked"
+	},
+	{
+		"ID": 2637,
+		"sqm": 1200,
+		"price": 110000,
+		"description": "Large plot with plenty of building space.",
+		"availability": "available"
+	},
+	{
+		"ID": 2638,
+		"sqm": 500,
+		"price": 90000,
+		"description": "Perfect for residential or commercial use.",
+		"availability": "available"
+	},
+	{
+		"ID": 2639,
+		"sqm": 400,
+		"price": 53000,
+		"description": "Quiet and peaceful neighborhood.",
+		"availability": "under-offer"
+	},
+	{
+		"ID": 2640,
+		"sqm": 1200,
+		"price": 117000,
+		"description": "Large stand with stunning mountain views.",
+		"availability": "available"
+	},
+	{
+		"ID": 2641,
+		"sqm": 500,
+		"price": 83000,
+		"description": "Close to public transport and shopping centers.",
+		"availability": "available"
+	},
+	{
+		"ID": 2642,
+		"sqm": 400,
+		"price": 54000,
+		"description": "Affordable stand in a growing area.",
+		"availability": "sold"
+	},
+	{
+		"ID": 2643,
+		"sqm": 1200,
+		"price": 100000,
+		"description": "Ideal for a large family home with a big garden.",
+		"availability": "available"
+	},
+	{
+		"ID": 2644,
+		"sqm": 500,
+		"price": 76000,
+		"description": "Convenient location with lots of amenities.",
+		"availability": "available"
+	},
+	{
+		"ID": 2645,
+		"sqm": 400,
+		"price": 52000,
+		"description": "Quiet stand, perfect for a small home.",
+		"availability": "booked"
+	},
+	{
+		"ID": 2646,
+		"sqm": 1200,
+		"price": 105678,
+		"description": "Spacious stand with beautiful mountain views.",
+		"availability": "available"
+	},
+	{
+		"ID": 2647,
+		"sqm": 500,
+		"price": 75689,
+		"description": "Ideal location for a family home.",
+		"availability": "sold"
+	},
+	{
+		"ID": 2648,
+		"sqm": 400,
+		"price": 62900,
+		"description": "Affordable stand close to schools and shops.",
+		"availability": "available"
+	},
+	{
+		"ID": 2649,
+		"sqm": 500,
+		"price": 82000,
+		"description": "Great investment opportunity in a growing area.",
+		"availability": "under-offer"
+	},
+	{
+		"ID": 2650,
+		"sqm": 1200,
+		"price": 115000,
+		"description": "Large stand suitable for a luxurious villa.",
+		"availability": "booked"
+	},
+	{
+		"ID": 2651,
+		"sqm": 400,
+		"price": 55000,
+		"description": "Cozy plot in a quiet neighborhood.",
+		"availability": "available"
+	},
+	{
+		"ID": 2652,
+		"sqm": 1200,
+		"price": 108900,
+		"description": "Expansive lot with plenty of sunlight.",
+		"availability": "available"
+	},
+	{
+		"ID": 2653,
+		"sqm": 500,
+		"price": 92000,
+		"description": "Well-positioned stand near public transport.",
+		"availability": "sold"
+	},
+	{
+		"ID": 2654,
+		"sqm": 400,
+		"price": 62000,
+		"description": "Compact stand perfect for first-time buyers.",
+		"availability": "available"
+	},
+	{
+		"ID": 2655,
+		"sqm": 1200,
+		"price": 112345,
+		"description": "Ample space with picturesque surroundings.",
+		"availability": "under-offer"
+	},
+	{
+		"ID": 2656,
+		"sqm": 500,
+		"price": 88000,
+		"description": "Centrally located with easy city access.",
+		"availability": "booked"
+	},
+	{
+		"ID": 2657,
+		"sqm": 400,
+		"price": 58000,
+		"description": "Affordable lot near parks and recreation.",
+		"availability": "available"
+	},
+	{
+		"ID": 2658,
+		"sqm": 1200,
+		"price": 116500,
+		"description": "Premium lot with expansive mountain views.",
+		"availability": "sold"
+	},
+	{
+		"ID": 2659,
+		"sqm": 500,
+		"price": 87000,
+		"description": "Stand with potential for a duplex construction.",
+		"availability": "available"
+	},
+	{
+		"ID": 2660,
+		"sqm": 400,
+		"price": 61000,
+		"description": "Conveniently located near shopping centers.",
+		"availability": "under-offer"
+	},
+	{
+		"ID": 2661,
+		"sqm": 1200,
+		"price": 119800,
+		"description": "Spacious land ready for your dream home.",
+		"availability": "available"
+	},
+	{
+		"ID": 2662,
+		"sqm": 500,
+		"price": 83000,
+		"description": "Moderate-sized stand with scenic views.",
+		"availability": "booked"
+	},
+	{
+		"ID": 2663,
+		"sqm": 400,
+		"price": 60000,
+		"description": "Stand close to schools and essential services.",
+		"availability": "available"
+	},
+	{
+		"ID": 2664,
+		"sqm": 1200,
+		"price": 118450,
+		"description": "Large lot in a tranquil area with great potential.",
+		"availability": "sold"
+	},
+	{
+		"ID": 2665,
+		"sqm": 500,
+		"price": 90000,
+		"description": "Perfectly located for a family residence.",
+		"availability": "available"
+	},
+	{
+		"ID": 2666,
+		"sqm": 400,
+		"price": 57000,
+		"description": "Compact stand with easy city access.",
+		"availability": "under-offer"
+	},
+	{
+		"ID": 2667,
+		"sqm": 1200,
+		"price": 120000,
+		"description": "Expansive lot suitable for luxurious living.",
+		"availability": "booked"
+	},
+	{
+		"ID": 2668,
+		"sqm": 500,
+		"price": 78000,
+		"description": "Moderate-sized lot near a bustling market.",
+		"availability": "available"
+	},
+	{
+		"ID": 2669,
+		"sqm": 400,
+		"price": 54000,
+		"description": "Affordable land with easy highway access.",
+		"availability": "available"
+	},
+	{
+		"ID": 2670,
+		"sqm": 1200,
+		"price": 117600,
+		"description": "Large plot with panoramic views.",
+		"availability": "sold"
+	},
+	{
+		"ID": 2671,
+		"sqm": 500,
+		"price": 86000,
+		"description": "Stand with potential for multiple dwellings.",
+		"availability": "under-offer"
+	},
+	{
+		"ID": 2672,
+		"sqm": 400,
+		"price": 55000,
+		"description": "Conveniently located near amenities.",
+		"availability": "booked"
+	},
+	{
+		"ID": 2673,
+		"sqm": 1200,
+		"price": 111000,
+		"description": "Spacious stand with natural beauty.",
+		"availability": "available"
+	},
+	{
+		"ID": 2674,
+		"sqm": 500,
+		"price": 94000,
+		"description": "Well-sized lot in a prime area.",
+		"availability": "available"
+	},
+	{
+		"ID": 2676,
+		"sqm": 400,
+		"price": 75000,
+		"description": "A prime stand with ample space for residential development.",
+		"availability": "available"
+	  },
+	  {
+		"ID": 2677,
+		"sqm": 500,
+		"price": 90000,
+		"description": "Ideal for a family home, this stand offers excellent views and privacy.",
+		"availability": "under-offer"
+	  },
+	  {
+		"ID": 2678,
+		"sqm": 1200,
+		"price": 110000,
+		"description": "Spacious stand perfect for a luxurious estate with plenty of room to expand.",
+		"availability": "available"
+	  },
+	  {
+		"ID": 2679,
+		"sqm": 400,
+		"price": 65000,
+		"description": "Affordable stand in a growing community, close to amenities.",
+		"availability": "under-offer"
+	  },
+	  {
+		"ID": 2680,
+		"sqm": 500,
+		"price": 80000,
+		"description": "A serene location with beautiful surroundings, perfect for a peaceful retreat.",
+		"availability": "available"
+	  },
+	  {
+		"ID": 2681,
+		"sqm": 1200,
+		"price": 105000,
+		"description": "Large stand offering an excellent investment opportunity.",
+		"availability": "under-offer"
+	  },
+	  {
+		"ID": 2682,
+		"sqm": 400,
+		"price": 55000,
+		"description": "A budget-friendly option in a developing area, ideal for first-time buyers.",
+		"availability": "available"
+	  },
+	  {
+		"ID": 2683,
+		"sqm": 500,
+		"price": 95000,
+		"description": "A well-located stand with easy access to major roads and facilities.",
+		"availability": "under-offer"
+	  },
+	  {
+		"ID": 2684,
+		"sqm": 1200,
+		"price": 120000,
+		"description": "Perfect for a grand home, this stand offers expansive space and great potential.",
+		"availability": "available"
+	  },
+	  {
+        "ID": 2701,
+        "sqm": 500,
+        "price": 61821,
+        "description": "Prime location with excellent transport links.",
+        "availability": "available"
+    },
+    {
+        "ID": 2702,
+        "sqm": 400,
+        "price": 102356,
+        "description": "Spacious lot close to the city center and amenities.",
+        "availability": "sold"
+    },
+    {
+        "ID": 2703,
+        "sqm": 1200,
+        "price": 110932,
+        "description": "Large plot with potential for development.",
+        "availability": "available"
+    },
+    {
+        "ID": 2704,
+        "sqm": 500,
+        "price": 67029,
+        "description": "Peaceful area with stunning views of the countryside.",
+        "availability": "booked"
+    },
+    {
+        "ID": 2705,
+        "sqm": 400,
+        "price": 53114,
+        "description": "Ideal for residential construction with nearby facilities.",
+        "availability": "available"
+    },
+    {
+        "ID": 2706,
+        "sqm": 1200,
+        "price": 95421,
+        "description": "Located in a thriving community with a lot of potentials.",
+        "availability": "under-offer"
+    },
+    {
+        "ID": 2707,
+        "sqm": 400,
+        "price": 78456,
+        "description": "A great investment opportunity near the university.",
+        "availability": "available"
+    },
+    {
+        "ID": 2708,
+        "sqm": 500,
+        "price": 58900,
+        "description": "Quiet neighborhood with easy access to main roads.",
+        "availability": "available"
+    },
+    {
+        "ID": 2709,
+        "sqm": 1200,
+        "price": 112987,
+        "description": "Perfect for large-scale construction projects.",
+        "availability": "sold"
+    },
+    {
+        "ID": 2710,
+        "sqm": 400,
+        "price": 97823,
+        "description": "Scenic views and close to recreational areas.",
+        "availability": "available"
+    },
+    {
+        "ID": 2711,
+        "sqm": 500,
+        "price": 62345,
+        "description": "Residential area with great schools nearby.",
+        "availability": "under-offer"
+    },
+    {
+        "ID": 2712,
+        "sqm": 1200,
+        "price": 113000,
+        "description": "Large stand in an up-and-coming neighborhood.",
+        "availability": "available"
+    },
+    {
+        "ID": 2713,
+        "sqm": 400,
+        "price": 65432,
+        "description": "Compact lot ideal for a small family home.",
+        "availability": "available"
+    },
+    {
+        "ID": 2714,
+        "sqm": 500,
+        "price": 79000,
+        "description": "Near public transport and shopping centers.",
+        "availability": "available"
+    },
+    {
+        "ID": 2715,
+        "sqm": 1200,
+        "price": 118765,
+        "description": "Prime land ready for immediate development.",
+        "availability": "booked"
+    },
+    {
+        "ID": 2716,
+        "sqm": 400,
+        "price": 50250,
+        "description": "Perfect for a weekend getaway retreat.",
+        "availability": "available"
+    },
+    {
+        "ID": 2717,
+        "sqm": 500,
+        "price": 87654,
+        "description": "Close to the beach with beautiful sea views.",
+        "availability": "sold"
+    },
+    {
+        "ID": 2718,
+        "sqm": 1200,
+        "price": 105432,
+        "description": "Large lot perfect for investment opportunities.",
+        "availability": "available"
+    },
+    {
+        "ID": 2719,
+        "sqm": 400,
+        "price": 56321,
+        "description": "Quiet and secluded location with lush greenery.",
+        "availability": "available"
+    },
+    {
+        "ID": 2720,
+        "sqm": 500,
+        "price": 97000,
+        "description": "Next to a park and other recreational facilities.",
+        "availability": "available"
+    },
+    {
+        "ID": 2721,
+        "sqm": 1200,
+        "price": 119999,
+        "description": "Exceptional location with high investment potential.",
+        "availability": "booked"
+    },
+    {
+        "ID": 2722,
+        "sqm": 400,
+        "price": 67890,
+        "description": "Easy access to schools and public services.",
+        "availability": "available"
+    },
+    {
+        "ID": 2723,
+        "sqm": 500,
+        "price": 65324,
+        "description": "Fantastic opportunity in a growing neighborhood.",
+        "availability": "under-offer"
+    },
+    {
+        "ID": 2724,
+        "sqm": 1200,
+        "price": 108765,
+        "description": "Expansive plot ideal for a luxury estate.",
+        "availability": "available"
+    },
+    {
+        "ID": 2725,
+        "sqm": 400,
+        "price": 55000,
+        "description": "Convenient location with excellent local amenities.",
+        "availability": "available"
+    },
+    {
+        "ID": 2726,
+        "sqm": 500,
+        "price": 88990,
+        "description": "Quiet suburban area perfect for a family home.",
+        "availability": "sold"
+    },
+    {
+        "ID": 2727,
+        "sqm": 1200,
+        "price": 114321,
+        "description": "Ample space for commercial development projects.",
+        "availability": "available"
+    },
+    {
+        "ID": 2728,
+        "sqm": 400,
+        "price": 71532,
+        "description": "Excellent location for a new residential project.",
+        "availability": "available"
+    },
+    {
+        "ID": 2729,
+        "sqm": 500,
+        "price": 93500,
+        "description": "Peaceful area with easy access to main routes.",
+        "availability": "under-offer"
+    },
+    {
+        "ID": 2730,
+        "sqm": 1200,
+        "price": 120000,
+        "description": "Large, versatile lot in a prime location.",
+        "availability": "available"
+    },
+	{
+        "ID": 2731,
+        "sqm": 1200,
+        "price": 90540,
+        "description": "This stand is perfect for building a spacious family home with a large garden.",
+        "availability": "available"
+    },
+    {
+        "ID": 2732,
+        "sqm": 400,
+        "price": 78630,
+        "description": "A cozy plot ideal for a small, modern home in a quiet neighborhood.",
+        "availability": "sold"
+    },
+    {
+        "ID": 2733,
+        "sqm": 500,
+        "price": 64500,
+        "description": "Beautiful stand with easy access to amenities and main roads.",
+        "availability": "available"
+    },
+    {
+        "ID": 2734,
+        "sqm": 400,
+        "price": 101200,
+        "description": "An excellent investment opportunity in a rapidly growing area.",
+        "availability": "under-offer"
+    },
+    {
+        "ID": 2735,
+        "sqm": 1200,
+        "price": 112300,
+        "description": "Spacious plot suitable for luxury developments with great views.",
+        "availability": "available"
+    },
+    {
+        "ID": 2736,
+        "sqm": 500,
+        "price": 74000,
+        "description": "A compact, well-located plot perfect for urban living.",
+        "availability": "booked"
+    },
+    {
+        "ID": 2737,
+        "sqm": 400,
+        "price": 68300,
+        "description": "Affordable stand close to schools and shopping centers.",
+        "availability": "available"
+    },
+    {
+        "ID": 2738,
+        "sqm": 1200,
+        "price": 98000,
+        "description": "Large plot with plenty of space for a garden and outdoor amenities.",
+        "availability": "sold"
+    },
+    {
+        "ID": 2739,
+        "sqm": 500,
+        "price": 56000,
+        "description": "Perfect stand for a small home, located in a peaceful area.",
+        "availability": "available"
+    },
+    {
+        "ID": 2740,
+        "sqm": 400,
+        "price": 86000,
+        "description": "Great plot for a starter home with a convenient layout.",
+        "availability": "under-offer"
+    },
+    {
+        "ID": 2741,
+        "sqm": 1200,
+        "price": 109000,
+        "description": "Ideal for a large family residence with ample outdoor space.",
+        "availability": "available"
+    },
+    {
+        "ID": 2742,
+        "sqm": 500,
+        "price": 59000,
+        "description": "Affordable and well-located, this plot is a great investment.",
+        "availability": "booked"
+    },
+    {
+        "ID": 2743,
+        "sqm": 400,
+        "price": 78000,
+        "description": "Compact stand perfect for a neat, low-maintenance home.",
+        "availability": "available"
+    },
+    {
+        "ID": 2744,
+        "sqm": 1200,
+        "price": 102500,
+        "description": "Spacious plot offering a lot of potential for development.",
+        "availability": "sold"
+    },
+    {
+        "ID": 2745,
+        "sqm": 500,
+        "price": 65500,
+        "description": "A lovely stand with great potential in a well-established area.",
+        "availability": "available"
+    },
+    {
+        "ID": 2746,
+        "sqm": 400,
+        "price": 85500,
+        "description": "Excellent location with easy access to parks and recreational areas.",
+        "availability": "under-offer"
+    },
+    {
+        "ID": 2747,
+        "sqm": 1200,
+        "price": 110000,
+        "description": "Perfect for a luxurious home with ample room for landscaping.",
+        "availability": "available"
+    },
+    {
+        "ID": 2748,
+        "sqm": 500,
+        "price": 70000,
+        "description": "Ideal stand for a compact, modern home close to city amenities.",
+        "availability": "sold"
+    },
+    {
+        "ID": 2749,
+        "sqm": 400,
+        "price": 64500,
+        "description": "Affordable plot in a quiet suburb with a friendly community.",
+        "availability": "available"
+    },
+    {
+        "ID": 2750,
+        "sqm": 1200,
+        "price": 98500,
+        "description": "Large and versatile plot with numerous possibilities for development.",
+        "availability": "available"
+    },
+    {
+        "ID": 2751,
+        "sqm": 500,
+        "price": 57000,
+        "description": "Perfectly sized plot for a small, cozy home in a serene environment.",
+        "availability": "booked"
+    },
+    {
+        "ID": 2752,
+        "sqm": 400,
+        "price": 89000,
+        "description": "Great value stand with excellent transport links and amenities.",
+        "availability": "sold"
+    },
+    {
+        "ID": 2753,
+        "sqm": 1200,
+        "price": 103000,
+        "description": "Ideal for a large family home with plenty of room for expansion.",
+        "availability": "available"
+    },
+    {
+        "ID": 2754,
+        "sqm": 500,
+        "price": 68000,
+        "description": "A well-located plot with a great potential for investment.",
+        "availability": "under-offer"
+    },
+    {
+        "ID": 2755,
+        "sqm": 400,
+        "price": 75000,
+        "description": "Perfect for a small, low-maintenance home with easy upkeep.",
+        "availability": "available"
+    },
+    {
+        "ID": 2756,
+        "sqm": 1200,
+        "price": 114000,
+        "description": "Large plot suitable for a luxury home with beautiful scenery.",
+        "availability": "available"
+    },
+    {
+        "ID": 2757,
+        "sqm": 500,
+        "price": 62000,
+        "description": "Affordable plot in a well-established and growing community.",
+        "availability": "sold"
+    },
+    {
+        "ID": 2758,
+        "sqm": 400,
+        "price": 82000,
+        "description": "A compact plot ideal for a modern, energy-efficient home.",
+        "availability": "booked"
+    },
+    {
+        "ID": 2759,
+        "sqm": 1200,
+        "price": 99000,
+        "description": "Perfect for a spacious home with a large garden and outdoor space.",
+        "availability": "available"
+    },
+    {
+        "ID": 2760,
+        "sqm": 500,
+        "price": 67500,
+        "description": "Well-located stand with potential for a cozy and comfortable home.",
+        "availability": "available"
+    }
 ]

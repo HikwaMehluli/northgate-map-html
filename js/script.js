@@ -56,11 +56,11 @@ window.addEventListener('load', function () {
 					<main class="modal__content">
 						<h3 class="modal__price">
 							USD${modal.price.toLocaleString('en-US', { //  converts a number into a string using a specific locale
-			style: 'currency', // Specifies that the number should be formatted as currency.
-			currency: 'USD', // Specifies the currency to be USD (US Dollar).
-			minimumFractionDigits: 2, // Ensures that at least 2 decimal places are displayed.
-			maximumFractionDigits: 2, // Ensures that at most 2 decimal places are displayed.
-		})}
+								style: 'currency', // Specifies that the number should be formatted as currency.
+								currency: 'USD', // Specifies the currency to be USD (US Dollar).
+								minimumFractionDigits: 2, // Ensures that at least 2 decimal places are displayed.
+								maximumFractionDigits: 2, // Ensures that at most 2 decimal places are displayed.
+							})}
 						</h3>
 						<p>${modal.description}</p>
 					</main>
