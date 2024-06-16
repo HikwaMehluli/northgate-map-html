@@ -80,13 +80,12 @@ svg {
 // 
 // Availablity Styling
 //
-text,
 .text,
 #text,
 [data-name="text"] {
 	fill: var(--bg-black);
 	stroke: var(--bg-black);
-	stroke-width: .4px;
+	stroke-width: .2px;
 }
 
 .available,
@@ -100,12 +99,13 @@ text,
 	&:hover {
 		fill: var(--bg-black);
 		cursor: pointer;
-
-		~text
+		
 		~.text,
 		~#text,
 		~[data-name="text"] {
 			fill: var(--bg-white);
+			stroke: var(--bg-white);
+			stroke-width: .2px;
 		}
 	}
 }
