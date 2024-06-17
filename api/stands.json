@@ -1155,20 +1155,6 @@
         "availability": "available"
     },
     {
-        "ID": 2720,
-        "sqm": 500,
-        "price": 97000,
-        "description": "Next to a park and other recreational facilities.",
-        "availability": "available"
-    },
-    {
-        "ID": 2721,
-        "sqm": 1200,
-        "price": 119999,
-        "description": "Exceptional location with high investment potential.",
-        "availability": "booked"
-    },
-    {
         "ID": 2722,
         "sqm": 400,
         "price": 67890,
