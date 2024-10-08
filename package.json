@@ -10,8 +10,8 @@
 		"js-dev": "webpack --mode=development --watch"
 	},
 	"devDependencies": {
-		"sass": "^1.71.1",
-		"webpack": "^5.90.3",
+		"sass": "^1.79.4",
+		"webpack": "^5.95.0",
 		"webpack-cli": "^5.1.4"
 	},
 	"dependencies": {
