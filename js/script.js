@@ -174,9 +174,9 @@ window.addEventListener('load', function () {
 				instance.zoom(initialScale);
 
 				// Set initial pan
-				if (!isMobileDevice()) {
-					instance.pan({ x: 200, y: -1765 });
-				}
+				// if (!isMobileDevice()) {
+				// 	instance.pan({ x: 200, y: -1765 });
+				// }
 
 
 				// 
