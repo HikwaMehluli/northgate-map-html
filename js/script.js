@@ -24,12 +24,12 @@ window.addEventListener('load', function () {
 	//
 
 	// Get API endpoint
-	const apiEndpoint_phaseOne = './api/stands.json';
+	const apiEndpoint = './api/phasetwo.json';
 
-	// Fetch modal data from apiEndpoint_phaseOne
+	// Fetch modal data from apiEndpoint
 	async function fetchModalData() {
 		try {
-			const response = await fetch(apiEndpoint_phaseOne);
+			const response = await fetch(apiEndpoint);
 			const data = await response.json();
 			return data;
 		} catch (error) {
