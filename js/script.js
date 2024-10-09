@@ -41,7 +41,7 @@ window.addEventListener('load', function () {
 	// Generate Modal HTML Structure
 	function createModal(modal) {
 		return `
-		<div class="modal micromodal-slide" id="${modal.ID}" aria-hidden="true">
+		<div class="modal micromodal-slide" id="res_${modal.ID}" aria-hidden="true">
 			<div class="modal__overlay" tabindex="-${modal.ID}" data-micromodal-close>
 				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="${modal.ID}-title">
 					<header class="modal__header">
@@ -98,11 +98,12 @@ window.addEventListener('load', function () {
 
 		svgData.forEach(item => {
 			// Select the corresponding <g> element
-			const gElement = document.getElementById(`_${item.ID}`);
+			// const gElement = document.getElementById(`_${item.ID}`);// phase_one
+			const gElement = document.getElementById(`res_${item.ID}`);// phase_two
 
 			if (gElement) {
 				// Update data-micromodal-trigger attribute
-				gElement.setAttribute('data-micromodal-trigger', item.ID);
+				gElement.setAttribute('data-micromodal-trigger', item.ID); 
 
 				// Update the class of the polygon element for availability status
 				const polygon = gElement.querySelector('polygon');
@@ -167,7 +168,7 @@ window.addEventListener('load', function () {
 				// 
 				var instance = options.instance,
 					initialScale = 3, // Initial zoom level phase_one = 3
-					pannedX = 0, // Initial pannedX phase_one = 0
+					pannedX = 0,
 					pannedY = 0
 
 				// Set initial zoom level
