@@ -1,0 +1,44 @@
+[
+	{
+		"ID": 5278,
+		"sqm": 900,
+		"price": 110000,
+		"description": "Large corner plot with panoramic views of the countryside, ideal for a luxury villa.",
+		"availability": "available"
+	},
+	{
+		"ID": 5279,
+		"sqm": 700,
+		"price": 85000,
+		"description": "Serene plot near the city center, perfect for building a modern family home.",
+		"availability": "under-offer"
+	},
+	{
+		"ID": 5280,
+		"sqm": 500,
+		"price": 65000,
+		"description": "Compact residential plot in a peaceful neighborhood, ideal for a small home.",
+		"availability": "available"
+	},
+	{
+		"ID": 5281,
+		"sqm": 750,
+		"price": 98000,
+		"description": "Spacious lot surrounded by lush greenery, ideal for eco-friendly home development.",
+		"availability": "under-offer"
+	},
+	{
+		"ID": 5282,
+		"sqm": 850,
+		"price": 105000,
+		"description": "Elevated plot with unobstructed sunset views, perfect for a luxurious hilltop home.",
+		"availability": "available"
+	},
+	{
+		"ID": 5283,
+		"sqm": 600,
+		"price": 78000,
+		"description": "Cozy lot with easy access to local amenities, ideal for a compact family residence.",
+		"availability": "under-offer"
+	}
+]
