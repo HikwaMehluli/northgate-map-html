@@ -24,12 +24,12 @@ window.addEventListener('load', function () {
 	//
 
 	// Get API endpoint
-	const apiEndpoint = './api/stands.json';
+	const apiEndpoint_phaseOne = './api/stands.json';
 
-	// Fetch modal data from apiEndpoint
+	// Fetch modal data from apiEndpoint_phaseOne
 	async function fetchModalData() {
 		try {
-			const response = await fetch(apiEndpoint);
+			const response = await fetch(apiEndpoint_phaseOne);
 			const data = await response.json();
 			return data;
 		} catch (error) {
@@ -65,7 +65,7 @@ window.addEventListener('load', function () {
 						<p>${modal.description}</p>
 					</main>
 					<footer class="modal__footer">
-						<a class="modal__btn" href="https://staging.northgate.co.zw">Buy Stand</a>
+						<a class="modal__btn" href="https://www.northgateestates.co.zw/">Buy Stand</a>
 						<a class="modal__btn" data-micromodal-close>Close</a>
 					</footer>
 				</div>
