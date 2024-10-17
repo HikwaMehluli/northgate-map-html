@@ -167,7 +167,7 @@ window.addEventListener('load', function () {
 				// Variables
 				// 
 				var instance = options.instance,
-					initialScale = 3, // Initial zoom level phase_one = 3
+					initialScale = 1, // Initial zoom level phase_one = 3
 					pannedX = 0,
 					pannedY = 0
 
