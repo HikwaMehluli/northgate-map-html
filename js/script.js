@@ -1,11 +1,11 @@
 import tippy from 'tippy.js';
 import MicroModal from 'micromodal';
+// import MicroModal from './micromodal.min.js';
 import svgPanZoom from './svg-pan-zoom.min.js';
 import './hammer.js';
 
 window.addEventListener('load', function () {
 	console.log('%c Made by Digital Afros', 'font-size: 12px;');
-
 
 
 	// 
