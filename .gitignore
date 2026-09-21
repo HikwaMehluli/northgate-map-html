@@ -21,6 +21,7 @@
 *.zip
 /node_modules
 /ai
+AGENTS.md
 prepros.config
 fiveserver.config.js
 
