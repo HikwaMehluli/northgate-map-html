@@ -5,7 +5,7 @@ import svgPanZoom from './svg-pan-zoom.min.js';
 import './hammer.js';
 
 window.addEventListener('load', function () {
-	console.log('%c Made by Digital Afros', 'font-size: 12px;');
+	console.log('%c Made by thatAfro', 'font-size: 12px;');
 
 
 	// 
