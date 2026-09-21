@@ -110,7 +110,7 @@ window.addEventListener('load', function () {
 						<p>${stand.description}</p>
 					</main>
 					<footer class="modal__footer">
-						<a class="modal__btn" href="https://staging.northgate.co.zw">Buy Stand</a>
+						<a class="modal__btn" href="login.html">Buy Stand</a>
 						<a class="modal__btn" data-micromodal-close>Close</a>
 					</footer>
 				</div>
