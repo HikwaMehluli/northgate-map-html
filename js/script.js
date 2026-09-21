@@ -170,7 +170,7 @@ window.addEventListener('load', function () {
 	// SVG pan & zoom map
 	// ------------------------------------------------------------
 
-	const svgElement = document.querySelector('svg');
+	const svgElement = document.querySelector('.map-container svg');
 
 	// Pages without a map (e.g. login.html) stop here.
 	if (!svgElement) return;
@@ -189,7 +189,7 @@ window.addEventListener('load', function () {
 		'phase-one-sections': {},
 	};
 
-	svgPanZoom(svgElement, {
+	const panZoomInstance = svgPanZoom(svgElement, {
 		viewportSelector: '.svg-pan-zoom_viewport',
 		panEnabled: true,
 		controlIconsEnabled: false,
@@ -225,31 +225,6 @@ window.addEventListener('load', function () {
 				if (viewConfig.pan && !isMobileDevice()) {
 					instance.pan(viewConfig.pan);
 				}
-
-				// Add Custom Controls
-				document.getElementById('pan-up').addEventListener('click', function () {
-					instance.panBy({ x: 0, y: 100 });
-				});
-
-				document.getElementById('pan-right').addEventListener('click', function () {
-					instance.panBy({ x: -100, y: 0 });
-				});
-
-				document.getElementById('pan-down').addEventListener('click', function () {
-					instance.panBy({ x: 0, y: -100 });
-				});
-
-				document.getElementById('pan-left').addEventListener('click', function () {
-					instance.panBy({ x: 100, y: 0 });
-				});
-
-				document.getElementById('zoom-in').addEventListener('click', function () {
-					instance.zoomIn();
-				});
-
-				document.getElementById('zoom-out').addEventListener('click', function () {
-					instance.zoomOut();
-				});
 
 				// Init Hammer for Touch Controls
 				this.hammer = Hammer(options.svgElement, {
@@ -298,4 +273,40 @@ window.addEventListener('load', function () {
 			}
 		}
 	});
+
+	// ------------------------------------------------------------
+	// Map controls: pan, zoom and the legend button.
+	// ------------------------------------------------------------
+
+	// Toggle the full-screen map legend on/off.
+	function toggleLegend() {
+		const legend = document.getElementById('map-legend');
+		if (!legend) return;
+
+		const isHidden = legend.style.display === 'none' || legend.style.display === '';
+		legend.style.display = isHidden ? 'block' : 'none';
+	}
+
+	// Wire each on-screen control button to a pan-zoom action.
+	// Every page uses the same button ids, so one map covers all.
+	function bindMapControls(panZoom) {
+		const actions = {
+			'pan-up':    function () { panZoom.panBy({ x: 0, y: 100 }); },
+			'pan-right': function () { panZoom.panBy({ x: -100, y: 0 }); },
+			'pan-down':  function () { panZoom.panBy({ x: 0, y: -100 }); },
+			'pan-left':  function () { panZoom.panBy({ x: 100, y: 0 }); },
+			'zoom-in':   function () { panZoom.zoomIn(); },
+			'zoom-out':  function () { panZoom.zoomOut(); },
+		};
+
+		Object.keys(actions).forEach(function (id) {
+			const button = document.getElementById(id);
+			if (button) button.addEventListener('click', actions[id]);
+		});
+
+		const infoButton = document.getElementById('info');
+		if (infoButton) infoButton.addEventListener('click', toggleLegend);
+	}
+
+	bindMapControls(panZoomInstance);
 });

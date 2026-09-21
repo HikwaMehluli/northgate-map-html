@@ -38,7 +38,42 @@ body {
 	margin: 0 auto;
 	font-family: "Montserrat", sans-serif;
 	width: 100%;
+	overflow-x: hidden;
 	// max-width: 1200px;
+}
+
+//
+// Custom scrollbar (y-axis only) + hide the horizontal one
+//
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	scrollbar-width: thin;
+	scrollbar-color: var(--bg-blue) rgba(0, 0, 0, .08);
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, .08);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--bg-blue);
+	border-radius: 8px;
+
+	&:hover {
+		background-color: var(--bg-black);
+	}
+}
+
+// Firefox: thin scrollbars inside nested scrollers too
+.drawer__sub,
+.map-legend {
+	scrollbar-width: thin;
+	scrollbar-color: var(--bg-blue) rgba(0, 0, 0, .08);
 }
 
 @font-face {

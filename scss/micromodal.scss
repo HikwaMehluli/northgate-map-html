@@ -26,10 +26,11 @@
 	overflow-y: auto;
 }
 
-.modal__header {
+header.modal__header {
 	// display: flex;
 	// justify-content: space-between;
 	// align-items: center;
+	background-color: var(--bg-white);
 	position: relative;
 
 	h3.modal__sqm {

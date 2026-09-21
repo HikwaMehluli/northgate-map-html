@@ -3510,27 +3510,27 @@
 
 
 		<div class="custom-controls">
-			<span id="pan-up">
+			<button type="button" id="pan-up" aria-label="Pan up">
 				<div class="icon-arrow up"></div>
-			</span>
-			<span id="pan-right">
+			</button>
+			<button type="button" id="pan-right" aria-label="Pan right">
 				<div class="icon-arrow right"></div>
-			</span>
-			<span id="pan-down">
+			</button>
+			<button type="button" id="pan-down" aria-label="Pan down">
 				<div class="icon-arrow down"></div>
-			</span>
-			<span id="pan-left">
+			</button>
+			<button type="button" id="pan-left" aria-label="Pan left">
 				<div class="icon-arrow left"></div>
-			</span>
-			<span id="zoom-in">
+			</button>
+			<button type="button" id="zoom-in" aria-label="Zoom in">
 				<div class="icon-plus"></div>
-			</span>
-			<span id="zoom-out">
+			</button>
+			<button type="button" id="zoom-out" aria-label="Zoom out">
 				<div class="icon-minus"></div>
-			</span>
-			<span id="info" onclick="showLegend()">
+			</button>
+			<button type="button" id="info" aria-label="Toggle legend">
 				<div class="icon-info"></div>
-			</span>
+			</button>
 		</div>
 	</div>
 
@@ -3540,15 +3540,6 @@
 	</div>
 
 
-	<script>
-		function showLegend() {
-			const legend = document.getElementById('map-legend');
-			if (legend.style.display === 'none' || legend.style.display === '') {
-				legend.style.display = 'block';
-			} else {
-				legend.style.display = 'none';
-			}
-		}
-	</script>
+	
 </body>
 </html>
