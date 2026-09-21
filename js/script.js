@@ -4,6 +4,35 @@ import svgPanZoom from './svg-pan-zoom.min.js';
 import './hammer.js';
 import initNavigation from './navigation.js';
 
+// ------------------------------------------------------------
+// Anti-inspection guard (deterrent only — never trust client-side
+// protection to actually hide code from a determined user).
+// ------------------------------------------------------------
+
+// Block the right-click context menu.
+document.addEventListener('contextmenu', function (e) {
+	e.preventDefault();
+});
+
+// Block the common devtools / view-source shortcuts across browsers.
+document.addEventListener('keydown', function (e) {
+	if (e.key === 'F12') {
+		e.preventDefault();
+		return;
+	}
+
+	// Ctrl+U view source (Firefox/Chrome/Edge)
+	if (e.ctrlKey && !e.altKey && !e.metaKey && e.key.toLowerCase() === 'u') {
+		e.preventDefault();
+		return;
+	}
+
+	// Ctrl/Cmd+Shift+I/J/C/K — devtools, console, inspect element, web console
+	if ((e.ctrlKey || e.metaKey) && e.shiftKey && /^[ijck]$/i.test(e.key)) {
+		e.preventDefault();
+	}
+});
+
 window.addEventListener('load', function () {
 
 	// Detect touch devices: used to skip tooltips and map panning.
