@@ -4,7 +4,11 @@ An Interactive Map for a real estate development called Northgate Estates in Har
 
 I hope this inspires you on how to create interactive maps. If you do work on something please share with me.
 
+<<<<<<< HEAD
 Demo Page - https://northgate-maps.vercel.app
+=======
+Demo Page - https://northgate-maps.vercel.app/
+>>>>>>> d058ffac9e3d4c128e8216d467c1d06446045b96
 
 Live Page - Coming Soon
 
