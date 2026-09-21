@@ -17,6 +17,7 @@ export default function initNavigation() {
 
 	function close() {
 		drawer.classList.remove('drawer--open');
+		drawer.classList.remove('drawer--sub-open');
 		if (subDrawer) subDrawer.classList.remove('drawer__sub--open');
 	}
 
@@ -31,10 +32,12 @@ export default function initNavigation() {
 	// Nested sub-menu (Phase One pages) with a back button.
 	if (phaseOneBtn && subDrawer) {
 		phaseOneBtn.addEventListener('click', function () {
+			drawer.classList.add('drawer--sub-open');
 			subDrawer.classList.add('drawer__sub--open');
 		});
 
 		subBack.addEventListener('click', function () {
+			drawer.classList.remove('drawer--sub-open');
 			subDrawer.classList.remove('drawer__sub--open');
 		});
 	}

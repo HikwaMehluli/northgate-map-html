@@ -98,6 +98,22 @@
 		}
 	}
 
+	.auth__back {
+		display: block;
+		margin-top: 16px;
+		font-size: 13px;
+		font-weight: 500;
+		letter-spacing: .3px;
+		color: var(--bg-blue);
+		text-align: center;
+		text-decoration: none;
+		transition: opacity .2s ease;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
 	.auth__message {
 		margin: 14px 0 0;
 		font-size: 13px;

@@ -21,8 +21,7 @@ body {
   background-color: var(--bg-white);
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
-  width: 95%;
-  max-width: 1200px;
+  width: 100%;
 }
 
 @font-face {
@@ -400,9 +399,9 @@ a.modal__btn:hover {
 .map-container {
   background-color: var(--bg-color);
   border: 2px solid var(--bg-black);
-  margin: 20px 0 20px 0;
+  margin: 0;
   position: relative;
-  height: 95vh;
+  height: 100vh;
   width: 100%;
 }
 
@@ -412,6 +411,9 @@ svg {
   left: 0px;
   width: 100%;
   height: 100%;
+}
+svg g {
+  outline: unset;
 }
 
 .border,
@@ -617,16 +619,23 @@ svg {
   margin: 5px;
 }
 
+header {
+  background-color: var(--bg-blue);
+  margin: 0 auto;
+  width: 100%;
+}
+
 .navigation {
   position: relative;
   z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   padding: 14px 20px;
-  background-color: var(--bg-blue);
   box-sizing: border-box;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1200px;
 }
 
 .navigation__logo {
@@ -638,12 +647,17 @@ svg {
 .navigation__logo:hover {
   opacity: 0.85;
 }
-.navigation__logo svg {
+.navigation__logo img {
   display: block;
-  height: 32px;
+  height: 35px;
   width: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation__logo img {
+    height: 50px;
+  }
+}
 .navigation__actions {
   display: flex;
   align-items: center;
@@ -654,23 +668,30 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
+  width: 50px;
+  height: 50px;
   padding: 0;
   border: none;
   border-radius: 6px;
   background: transparent;
-  color: #ffffff;
   cursor: pointer;
-  transition: background 0.2s ease, opacity 0.2s ease;
-}
-.navigation__icon:hover {
-  background: rgba(255, 255, 255, 0.12);
+  transition: var(--transition);
 }
 .navigation__icon svg {
+  position: relative;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
+  fill: none;
+  stroke: var(--bg-white);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+.navigation__icon:hover {
+  background: var(--bg-amenity);
+}
+.navigation__icon:hover svg {
+  stroke: var(--bg-black);
 }
 
 .drawer {
@@ -681,7 +702,7 @@ svg {
   width: min(340px, 90vw);
   height: 100vh;
   background-color: var(--bg-black);
-  color: #ffffff;
+  color: var(--bg-white);
   transform: translateX(100%);
   transition: transform 0.35s ease;
   overflow: hidden;
@@ -706,7 +727,7 @@ svg {
   border: none;
   border-radius: 6px;
   background: transparent;
-  color: #ffffff;
+  color: var(--bg-white);
   cursor: pointer;
   transition: background 0.2s ease;
 }
@@ -714,6 +735,7 @@ svg {
   background: rgba(255, 255, 255, 0.12);
 }
 .drawer .drawer__close svg {
+  position: relative;
   display: block;
   width: 18px;
   height: 18px;
@@ -731,7 +753,7 @@ svg {
   padding: 18px 24px;
   border: none;
   background: transparent;
-  color: #ffffff;
+  color: var(--bg-white);
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -747,7 +769,7 @@ svg {
   padding-left: 28px;
 }
 .drawer .drawer__link--disabled {
-  cursor: default;
+  cursor: not-allowed;
   opacity: 0.45;
 }
 .drawer .drawer__link--disabled:hover {
@@ -773,13 +795,18 @@ svg {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 2;
   background-color: var(--bg-black);
   transform: translateX(100%);
   transition: transform 0.35s ease;
   overflow-y: auto;
+  visibility: visible;
 }
 .drawer .drawer__sub.drawer__sub--open {
   transform: translateX(0);
+}
+.drawer.drawer--sub-open .drawer__menu {
+  visibility: hidden;
 }
 .drawer .drawer__back {
   display: flex;
@@ -790,7 +817,7 @@ svg {
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   background: transparent;
-  color: #ffffff;
+  color: var(--bg-white);
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 600;
@@ -803,6 +830,7 @@ svg {
   background: rgba(255, 255, 255, 0.06);
 }
 .drawer .drawer__back svg {
+  position: relative;
   display: block;
   width: 16px;
   height: 16px;
@@ -904,6 +932,20 @@ g[data-href] {
 }
 .auth .auth__submit:hover {
   opacity: 0.9;
+}
+.auth .auth__back {
+  display: block;
+  margin-top: 16px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: var(--bg-blue);
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+.auth .auth__back:hover {
+  text-decoration: underline;
 }
 .auth .auth__message {
   margin: 14px 0 0;
