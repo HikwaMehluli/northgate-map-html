@@ -1,70 +1,113 @@
 import tippy from 'tippy.js';
 import MicroModal from 'micromodal';
-// import MicroModal from './micromodal.min.js';
 import svgPanZoom from './svg-pan-zoom.min.js';
 import './hammer.js';
-
-
+import initNavigation from './navigation.js';
 
 window.addEventListener('load', function () {
-	console.log('%c Made by thatAfro', 'font-size: 12px;');
 
-
-	// 
-	// Detect Mobile Device. This function has been used inside TippyJS & svgPanZoomJS
-	//
+	// Detect touch devices: used to skip tooltips and map panning.
 	function isMobileDevice() {
 		return /iPhone|iPad|iPod|Android|Windows Phone/i.test(navigator.userAgent);
 	}
 
+	// ------------------------------------------------------------
+	// Navigation drawer + clickable phase links on the hub page
+	// ------------------------------------------------------------
 
+	initNavigation();
 
-	// 
-	// MicroModal - https://micromodal.vercel.app/#usage
-	// &
-	// TippyJS, Tooltip Options - https://atomiks.github.io/tippyjs/v6/customization/
-	//
+	// Any element with data-href acts as a plain link (e.g. the
+	// Phase One / Phase Two polygons on the hub page).
+	document.querySelectorAll('[data-href]').forEach(function (el) {
+		el.addEventListener('click', function () {
+			window.location.href = el.getAttribute('data-href');
+		});
+	});
 
-	// Get API endpoint
-	const apiEndpoint = './api/stands.json';
+	// Tooltips for stands and phase links (uses data-tippy-content).
+	function initTippy() {
+		if (isMobileDevice()) return;
+		tippy('[data-tippy-content]', {
+			allowHTML: true,
+			arrow: true,
+			delay: [100, 100],
+		});
+	}
 
-	// Fetch modal data from apiEndpoint
-	async function fetchModalData() {
+	// ------------------------------------------------------------
+	// Stands
+	// ------------------------------------------------------------
+
+	// Each page uses one stand id scheme:
+	//   Phase One pages: <g id="_2536"> inside <g id="residential">
+	//   Phase Two pages: <g id="res_5278">
+	// Pages with neither (e.g. the hub) have no interactive stands.
+	function getStandPrefix() {
+		if (document.getElementById('residential')) return '_';
+		if (document.querySelector('g[id^="res_"]')) return 'res_';
+		return null;
+	}
+
+	// Collect every stand id that actually exists on this page so we
+	// only load matching modals and skip ids that are not shown.
+	function getPageStandIds(prefix) {
+		const ids = new Set();
+
+		let groups;
+		if (prefix === '_') {
+			const residential = document.getElementById('residential');
+			groups = residential ? residential.querySelectorAll('g[id^="_"]') : [];
+		} else {
+			groups = document.querySelectorAll('g[id^="res_"]');
+		}
+
+		groups.forEach(function (g) {
+			ids.add(g.id.slice(prefix.length));
+		});
+
+		return ids;
+	}
+
+	// Pick the data file that belongs to the current page.
+	function getApiEndpoint(prefix) {
+		return prefix === 'res_' ? './api/phase-two.json' : './api/phase-one.json';
+	}
+
+	async function fetchStands(prefix) {
 		try {
-			const response = await fetch(apiEndpoint);
-			const data = await response.json();
-			return data;
+			const response = await fetch(getApiEndpoint(prefix));
+			return await response.json();
 		} catch (error) {
-			console.log('Error fetching modal data My Afro:', error);
+			console.log('Error fetching stand data:', error);
 			return [];
 		}
 	}
 
-	// Generate Modal HTML Structure
-	function createModal(modal) {
+	// Modal HTML for a single stand.
+	function createModal(stand) {
+		const price = stand.price.toLocaleString('en-US', {
+			style: 'currency',
+			currency: 'USD',
+			minimumFractionDigits: 2,
+		});
+
 		return `
-		<div class="modal micromodal-slide" id="${modal.ID}" aria-hidden="true">
-			<div class="modal__overlay" tabindex="-${modal.ID}" data-micromodal-close>
-				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="${modal.ID}-title">
+		<div class="modal micromodal-slide" id="${stand.ID}" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-${stand.ID}" data-micromodal-close>
+				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="${stand.ID}-title">
 					<header class="modal__header">
-						<h2 class="modal__title ${modal.availability}" id="${modal.ID}-title">
-							Stand Number: ${modal.ID}
+						<h2 class="modal__title ${stand.availability}" id="${stand.ID}-title">
+							Stand Number: ${stand.ID}
 						</h2>
 						<h3 class="modal__sqm">
-							Stand size: ${modal.sqm}sqm
+							Stand size: ${stand.sqm} sqm
 						</h3>
 						<button aria-label="Close Modal" class="modal__close" data-micromodal-close></button>
 					</header>
 					<main class="modal__content">
-						<h3 class="modal__price">
-							USD${modal.price.toLocaleString('en-US', { //  converts a number into a string using a specific locale
-								style: 'currency', // Specifies that the number should be formatted as currency.
-								currency: 'USD', // Specifies the currency to be USD (US Dollar).
-								minimumFractionDigits: 2, // Ensures that at least 2 decimal places are displayed.
-								maximumFractionDigits: 2, // Ensures that at most 2 decimal places are displayed.
-							})}
-						</h3>
-						<p>${modal.description}</p>
+						<h3 class="modal__price">${price}</h3>
+						<p>${stand.description}</p>
 					</main>
 					<footer class="modal__footer">
 						<a class="modal__btn" href="https://staging.northgate.co.zw">Buy Stand</a>
@@ -75,73 +118,77 @@ window.addEventListener('load', function () {
 		</div>`;
 	}
 
-	// Append Modals to the DOM
-	async function loadModals() {
+	// Append one modal per stand into the shared container.
+	function loadModals(stands) {
 		const modalContainer = document.getElementById('modal-container');
-		const modals = await fetchModalData();
-
-		modals.forEach(modal => {
-			modalContainer.insertAdjacentHTML('beforeend', createModal(modal));
-		});
-
-		// Initialize MicroModal
-		MicroModal.init();
-	}
-	// Call the function to load modals on page load
-	loadModals();
-
-
-
-	// 
-	// Function to update HTML elements on SVG's
-	// 
-	async function updateElements() {
-		const svgData = await fetchModalData();
-
-		svgData.forEach(item => {
-			// Select the corresponding <g> element
-			const gElement = document.getElementById(`_${item.ID}`);
-
-			if (gElement) {
-				// Update data-micromodal-trigger attribute
-				gElement.setAttribute('data-micromodal-trigger', item.ID);
-
-				// Update the class of the polygon element for availability status
-				const polygon = gElement.querySelector('polygon');
-				if (polygon) {
-					// polygon.className.baseVal = item.availability;
-					polygon.setAttribute('class', item.availability);
-				}
-
-				// Update the text content
-				const textElement = gElement.querySelector('text');
-				if (textElement) {
-					textElement.textContent = item.ID; // Set text to ID
-				}
-
-				// Update data-tippy-content attribute
-				gElement.setAttribute('data-tippy-content', `<h3>Stand No.${item.ID}</h3>`);
-			}
-
-			// Initialize Tippy.js and remove on mobile devices
-			if (!isMobileDevice()) {
-				tippy('[data-tippy-content]', {
-					arrow: true,
-					allowHTML: true,
-					delay: [100, 100],
-				});
-			}
+		stands.forEach(function (stand) {
+			modalContainer.insertAdjacentHTML('beforeend', createModal(stand));
 		});
 	}
-	// Call the function to update elements
-	updateElements();
 
+	// Colour the stand shape and wire its trigger attributes.
+	function colorStand(stand, prefix) {
+		const gElement = document.getElementById(prefix + stand.ID);
+		if (!gElement) return;
 
+		gElement.setAttribute('data-micromodal-trigger', stand.ID);
+		gElement.setAttribute('data-tippy-content', '<h3>Stand No.' + stand.ID + '</h3>');
 
-	//
-	// SVG Pan Zoom - https://github.com/bumbu/svg-pan-zoom
-	//
+		const shape = gElement.querySelector('[id="bg"], [id="amenity"], [id="reg_bg"], polygon');
+		if (shape) shape.setAttribute('class', stand.availability);
+	}
+
+	// Centre piece: fetches the page's data once, loads only the
+	// modals for stands shown here, colours them and re-inits libs.
+	function wireStands() {
+		const prefix = getStandPrefix();
+		if (!prefix) {
+			initTippy();
+			return;
+		}
+
+		const pageStandIds = getPageStandIds(prefix);
+
+		fetchStands(prefix).then(function (stands) {
+			const onThisPage = stands.filter(function (stand) {
+				return pageStandIds.has(String(stand.ID));
+			});
+
+			loadModals(onThisPage);
+			onThisPage.forEach(function (stand) {
+				colorStand(stand, prefix);
+			});
+
+			initTippy();
+			MicroModal.init();
+		});
+	}
+
+	wireStands();
+
+	// ------------------------------------------------------------
+	// SVG pan & zoom map
+	// ------------------------------------------------------------
+
 	const svgElement = document.querySelector('svg');
+
+	// Pages without a map (e.g. login.html) stop here.
+	if (!svgElement) return;
+
+	// Optional initial view per page, keyed by <svg id>.
+	// Empty = default fit/contain/center.
+	const mapViewConfig = {
+		'northgate-map-phase-one': {},
+		'northgate-map-phase-two': {},
+		'northgate-map-all': {},
+		'phase-one-section-a': {},
+		'phase-one-section-b': {},
+		'phase-one-section-c': {},
+		'phase-one-section-d': {},
+		'phase-one-section-e': {},
+		'phase-one-sections': {},
+	};
+
 	svgPanZoom(svgElement, {
 		viewportSelector: '.svg-pan-zoom_viewport',
 		panEnabled: true,
@@ -163,27 +210,23 @@ window.addEventListener('load', function () {
 
 			// Init custom events handler
 			init: function (options) {
+				var instance = options.instance;
 
-				// 
-				// Variables
-				// 
-				var instance = options.instance,
-					initialScale = 3, // Initial zoom level = 2
-					pannedX = 0,
-					pannedY = 0
+				// Apply per-page initial view (empty config = default fit/contain/center)
+				var viewConfig = mapViewConfig[svgElement.id] || {};
+				var initialScale = instance.getZoom();
+				var pannedX = 0;
+				var pannedY = 0;
 
-				// Set initial zoom level
-				instance.zoom(initialScale);
-
-				// Set initial pan
-				if (!isMobileDevice()) {
-					instance.pan({ x: 200, y: -1765 });
+				if (viewConfig.zoom) {
+					instance.zoom(viewConfig.zoom);
 				}
 
+				if (viewConfig.pan && !isMobileDevice()) {
+					instance.pan(viewConfig.pan);
+				}
 
-				// 
 				// Add Custom Controls
-				// 
 				document.getElementById('pan-up').addEventListener('click', function () {
 					instance.panBy({ x: 0, y: 100 });
 				});
@@ -208,53 +251,47 @@ window.addEventListener('load', function () {
 					instance.zoomOut();
 				});
 
-
-				// 
 				// Init Hammer for Touch Controls
-				// 
-				// Listen only for pointer and touch events
 				this.hammer = Hammer(options.svgElement, {
 					inputClass: Hammer.SUPPORT_POINTER_EVENTS ? Hammer.PointerEventInput : Hammer.TouchInput
-				})
+				});
 
 				// Handle pan
 				this.hammer.on('panstart panmove', function (ev) {
-					// On pan start reset panned variables
 					if (ev.type === 'panstart') {
-						pannedX = 0
-						pannedY = 0
+						pannedX = 0;
+						pannedY = 0;
 					}
 
 					// Pan only the difference
-					instance.panBy({ x: ev.deltaX - pannedX, y: ev.deltaY - pannedY })
-					pannedX = ev.deltaX
-					pannedY = ev.deltaY
-				})
+					instance.panBy({ x: ev.deltaX - pannedX, y: ev.deltaY - pannedY });
+					pannedX = ev.deltaX;
+					pannedY = ev.deltaY;
+				});
 
-				// Enable pinch
-				this.hammer.get('pinch').set({ enable: true })
+				// Enable + handle pinch zoom
+				this.hammer.get('pinch').set({ enable: true });
 
-				// Handle pinch
 				this.hammer.on('pinchstart pinchmove', function (ev) {
-					// On pinch start remember initial zoom
 					if (ev.type === 'pinchstart') {
-						initialScale = instance.getZoom()
-						instance.zoomAtPoint(initialScale * ev.scale, { x: ev.center.x, y: ev.center.y })
+						initialScale = instance.getZoom();
 					}
-					instance.zoomAtPoint(initialScale * ev.scale, { x: ev.center.x, y: ev.center.y })
-				})
+					instance.zoomAtPoint(initialScale * ev.scale, { x: ev.center.x, y: ev.center.y });
+				});
 
 				// Prevent moving the page on some devices when panning over SVG
-				options.svgElement.addEventListener('touchmove', function (e) { e.preventDefault(); });
+				options.svgElement.addEventListener('touchmove', function (e) {
+					e.preventDefault();
+				});
 			},
 
-			// destroy custom events handler
+			// Destroy custom events handler
 			destroy: function () {
-				this.hammer.destroy()
+				this.hammer.destroy();
 			},
 
 			click: function (event, instance) {
-				// Prevent default click behavior if panning or zooming
+				// Prevent default click behaviour if panning or zooming
 				if (instance.getZoom() !== 1 || instance.getPan().x !== 0 || instance.getPan().y !== 0) {
 					event.preventDefault();
 				}

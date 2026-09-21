@@ -14,6 +14,59 @@
 </head>
 
 <body>
+	<header class="navigation">
+		<a href="index.html" class="navigation__logo" aria-label="Northgate Estates">
+			<svg viewBox="0 0 200 32" xmlns="http://www.w3.org/2000/svg">
+				<text x="0" y="23" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff" letter-spacing="3">NORTHGATE</text>
+				<text x="116" y="23" font-family="Montserrat, Arial, sans-serif" font-size="9" font-weight="400" fill="rgba(255,255,255,.7)" letter-spacing="1.5">ESTATES</text>
+			</svg>
+		</a>
+		<div class="navigation__actions">
+			<a href="login.html" class="navigation__icon" aria-label="Login">
+				<svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+			</a>
+			<button id="menu-btn" class="navigation__icon" aria-label="Open menu">
+				<svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+			</button>
+		</div>
+	</header>
+
+	<nav class="drawer" id="navigation-drawer" aria-hidden="true">
+		<div class="drawer__header">
+			<button id="drawer-close" class="drawer__close" aria-label="Close menu">
+				<svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+			</button>
+		</div>
+		<ul class="drawer__menu">
+			<li>
+				<button id="nav-phase-one" class="drawer__link">
+					Phase One
+					<span class="drawer__chevron">&#8250;</span>
+				</button>
+				<div class="drawer__sub" id="sub-phase-one">
+					<button id="sub-phase-one-back" class="drawer__back">
+						<svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+						Back
+					</button>
+					<p class="drawer__eyebrow">Phase One</p>
+					<a href="phase-one-all.html" class="drawer__link">Full Map</a>
+					<a href="phase-one-sections.html" class="drawer__link">Sections Overview</a>
+					<a href="phase-one-section-a.html" class="drawer__link">Section A</a>
+					<a href="phase-one-section-b.html" class="drawer__link">Section B</a>
+					<a href="phase-one-section-c.html" class="drawer__link">Section C</a>
+					<a href="phase-one-section-d.html" class="drawer__link">Section D</a>
+					<a href="phase-one-section-e.html" class="drawer__link">Section E</a>
+				</div>
+			</li>
+			<li>
+				<a href="phase-two.html" class="drawer__link">Phase Two</a>
+			</li>
+			<li>
+				<span class="drawer__link drawer__link--disabled">Phase Three <span class="drawer__badge">Coming Soon</span></span>
+			</li>
+		</ul>
+	</nav>
+
     <div class="map-container">
         <svg id="northgate-map-phase-two" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3908.52 4931.55">
             <g transform="matrix(1,0,0,1,-44.1851,-3120.97)">

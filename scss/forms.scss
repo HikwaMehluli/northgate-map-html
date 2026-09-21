@@ -1,0 +1,107 @@
+//
+// Login & Forgot Password (login.html)
+//
+
+.auth {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	min-height: 70vh;
+	padding: 70px 16px;
+
+	.auth__card {
+		width: min(420px, 100%);
+		background: var(--bg-white);
+		border: 1px solid #e2e6ea;
+		border-radius: 10px;
+		box-shadow: 0 12px 40px rgba(27, 54, 100, .12);
+		overflow: hidden;
+	}
+
+	.auth__tabs {
+		display: flex;
+		border-bottom: 1px solid #e2e6ea;
+	}
+
+	.auth__tab {
+		flex: 1;
+		padding: 16px 10px;
+		border: none;
+		background: transparent;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		font-weight: 600;
+		letter-spacing: .5px;
+		color: var(--bg-grey);
+		cursor: pointer;
+		transition: color .2s ease;
+
+		&.auth__tab--active {
+			color: var(--bg-blue);
+			box-shadow: inset 0 -2px 0 var(--bg-blue);
+		}
+	}
+
+	.auth__panel {
+		display: none;
+		padding: 28px;
+
+		&.auth__panel--active {
+			display: block;
+		}
+	}
+
+	.auth__field {
+		margin-bottom: 18px;
+
+		label {
+			display: block;
+			margin-bottom: 6px;
+			font-size: 13px;
+			font-weight: 600;
+			color: var(--bg-blue);
+		}
+
+		input {
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #d5dbe2;
+			border-radius: 6px;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 14px;
+			box-sizing: border-box;
+			transition: border-color .2s ease;
+
+			&:focus {
+				outline: none;
+				border-color: var(--bg-blue);
+			}
+		}
+	}
+
+	.auth__submit {
+		width: 100%;
+		padding: 14px;
+		border: none;
+		border-radius: 6px;
+		background: var(--bg-blue);
+		color: var(--bg-white);
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		font-weight: 600;
+		letter-spacing: .5px;
+		cursor: pointer;
+		transition: opacity .2s ease;
+
+		&:hover {
+			opacity: .9;
+		}
+	}
+
+	.auth__message {
+		margin: 14px 0 0;
+		font-size: 13px;
+		color: var(--bg-grey);
+		text-align: center;
+	}
+}
