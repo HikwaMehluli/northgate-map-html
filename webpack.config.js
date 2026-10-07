@@ -6,4 +6,12 @@ module.exports = {
 		path: path.resolve(__dirname, 'js'),
 		filename: 'app.js'
 	},
+	module: {
+		rules: [
+			{
+				test: /\.css$/,
+				use: ['style-loader', 'css-loader'],
+			},
+		],
+	},
 }

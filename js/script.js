@@ -3,6 +3,7 @@ import MicroModal from 'micromodal';
 import svgPanZoom from './svg-pan-zoom.min.js';
 import './hammer.js';
 import initNavigation from './navigation.js';
+import initTour from './tour.js';
 
 // ------------------------------------------------------------
 // Anti-inspection guard (deterrent only — never trust client-side
@@ -350,4 +351,7 @@ window.addEventListener('load', function () {
 	}
 
 	bindMapControls(panZoomInstance);
+
+	// Guided tour: auto-runs twice for new visitors, replayable via the Tour button.
+	initTour();
 });

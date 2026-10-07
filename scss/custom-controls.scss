@@ -93,3 +93,38 @@
 	right: 0px;
 	bottom: 0px;
 }
+
+// 
+// Tour Relatted Styles
+// 
+
+.driver-popover-title {
+	background-color: transparent;
+}
+
+// Replayable guided tour button (injected by js/tour.js)
+#tour-btn {
+	position: fixed;
+	bottom: 160px;
+	right: 24px;
+	z-index: 20;
+	border: none;
+	border-radius: 15px;
+	padding: 0 14px;
+	box-sizing: border-box;
+	background-color: var(--bg-black);
+	color: var(--bg-white);
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	line-height: 30px;
+	height: 30px;
+	text-align: center;
+	transition: var(--transition);
+
+	&:hover {
+		background-color: var(--bg-buffer-area);
+	}
+}
