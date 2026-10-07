@@ -9,13 +9,17 @@ Demo Page - https://northgate-maps.vercel.app/
 Live Page - Coming Soon
 
 ## Production Dependencies
-#### TippyJS and Micromodal.JS
+#### TippyJS, Micromodal.JS and Driver.js
 
 ```
 npm i tippy.js
 
 npm i micromodal --save
+
+npm i driver.js
 ```
+
+Driver.js powers the guided tour (`js/tour.js`); its CSS is bundled into `app.js`.
 
 #### svgPanZoom.JS and Hammer.JS
 svgPanZoom & HammerJS are imported from /js folder into /js/script.js and compiled using webpack
@@ -31,6 +35,14 @@ You do not need to install these development dependencies if you have theme inst
 
 ```
 npm i sass webpack webpack-cli --save-dev
+```
+
+#### Bundling CSS from npm packages
+
+Webpack is configured with `css-loader` / `style-loader` so CSS imported from npm packages (e.g. `driver.js/dist/driver.css`) compiles into `js/app.js`:
+
+```
+npm i css-loader style-loader --save-dev
 ```
 
 #### If you have any Questions or Need help expanding on this, hit me up!

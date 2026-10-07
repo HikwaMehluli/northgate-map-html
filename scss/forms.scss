@@ -6,6 +6,8 @@
 body.auth-page {
 	position: relative;
 	z-index: 0;
+	// login.html has no header, so don't reserve space for it.
+	--header-height: 0px;
 
 	&::before {
 		content: '';

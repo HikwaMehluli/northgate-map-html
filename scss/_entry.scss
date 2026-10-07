@@ -31,6 +31,11 @@
 
 	// Other Variables
 	--transition: all .5s;
+
+	// Fixed <header> height: 50px controls + 14px padding top/bottom.
+	// Must match the rendered header height — used to push page content
+	// down (body padding) and shrink the map to the remaining viewport.
+	--header-height: 78px;
 }
 
 body {
@@ -39,6 +44,8 @@ body {
 	font-family: "Montserrat", sans-serif;
 	width: 100%;
 	overflow-x: hidden;
+	// Keep content clear of the fixed header (login overrides the var to 0).
+	padding-top: var(--header-height);
 	// max-width: 1200px;
 }
 

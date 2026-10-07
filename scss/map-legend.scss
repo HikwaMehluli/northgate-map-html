@@ -91,7 +91,8 @@
 	padding: 4px 0;
 	width: max-content;
 	max-width: min(320px, calc(100vw - 48px));
-	max-height: calc(100vh - 48px);
+	// Never grow up under the fixed header (24px gap top and bottom).
+	max-height: calc(100vh - var(--header-height) - 48px);
 	overflow-y: auto;
 	transition: opacity .4s ease, transform .4s ease, visibility .4s;
 

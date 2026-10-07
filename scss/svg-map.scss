@@ -3,7 +3,9 @@
 	border: 2px solid var(--bg-black);
 	margin: 0;
 	position: relative;
-	height: 100vh;
+	box-sizing: border-box; // Keep the 2px border inside the height below
+	// Fill the viewport below the fixed header.
+	height: calc(100vh - var(--header-height));
 	width: 100%;
 }
 
