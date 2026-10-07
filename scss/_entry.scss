@@ -71,7 +71,8 @@ html {
 
 // Firefox: thin scrollbars inside nested scrollers too
 .drawer__sub,
-.map-legend {
+.map-legend,
+.map-legend-panel {
 	scrollbar-width: thin;
 	scrollbar-color: var(--bg-blue) rgba(0, 0, 0, .08);
 }

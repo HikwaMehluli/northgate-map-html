@@ -307,13 +307,23 @@ window.addEventListener('load', function () {
 	// Map controls: pan, zoom and the legend button.
 	// ------------------------------------------------------------
 
-	// Toggle the full-screen map legend on/off.
+	// Toggle the fixed bottom-left legend panel on/off (smooth transition).
 	function toggleLegend() {
-		const legend = document.getElementById('map-legend');
-		if (!legend) return;
+		const panel = document.getElementById('map-legend-panel');
+		if (!panel) return;
 
-		const isHidden = legend.style.display === 'none' || legend.style.display === '';
-		legend.style.display = isHidden ? 'block' : 'none';
+		panel.classList.toggle('is-hidden');
+	}
+
+	// Desktop: panel visible by default. Mobile: hidden by default.
+	// The #info button toggles it either way.
+	function initLegend() {
+		const panel = document.getElementById('map-legend-panel');
+		if (!panel) return;
+
+		if (window.matchMedia('(max-width: 767px)').matches) {
+			panel.classList.add('is-hidden');
+		}
 	}
 
 	// Wire each on-screen control button to a pan-zoom action.
@@ -335,6 +345,8 @@ window.addEventListener('load', function () {
 
 		const infoButton = document.getElementById('info');
 		if (infoButton) infoButton.addEventListener('click', toggleLegend);
+
+		initLegend();
 	}
 
 	bindMapControls(panZoomInstance);
