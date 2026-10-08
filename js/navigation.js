@@ -4,25 +4,34 @@ export default function initNavigation() {
 	const menuBtn = document.getElementById('menu-btn');
 	const drawer = document.getElementById('navigation-drawer');
 	const closeBtn = document.getElementById('drawer-close');
+	const overlay = document.getElementById('drawer-overlay');
 	const phaseOneBtn = document.getElementById('nav-phase-one');
 	const subDrawer = document.getElementById('sub-phase-one');
 	const subBack = document.getElementById('sub-phase-one-back');
+	const subClose = document.getElementById('sub-phase-one-close');
 
 	// Pages without the navigation (e.g. login.html) simply skip.
 	if (!menuBtn || !drawer) return;
 
 	function open() {
 		drawer.classList.add('drawer--open');
+		if (overlay) overlay.classList.add('is-visible');
 	}
 
+	// Closes everything and resets to the top-level menu, so the
+	// next open starts at the top again.
 	function close() {
 		drawer.classList.remove('drawer--open');
 		drawer.classList.remove('drawer--sub-open');
 		if (subDrawer) subDrawer.classList.remove('drawer__sub--open');
+		if (overlay) overlay.classList.remove('is-visible');
 	}
 
 	menuBtn.addEventListener('click', open);
 	closeBtn.addEventListener('click', close);
+
+	// Clicking the dimmed overlay closes the drawer.
+	if (overlay) overlay.addEventListener('click', close);
 
 	// Escape key closes the drawer.
 	document.addEventListener('keydown', function (event) {
@@ -41,4 +50,7 @@ export default function initNavigation() {
 			subDrawer.classList.remove('drawer__sub--open');
 		});
 	}
+
+	// The X on the sub-level row closes the whole drawer.
+	if (subClose) subClose.addEventListener('click', close);
 }

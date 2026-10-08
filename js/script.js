@@ -62,6 +62,7 @@ window.addEventListener('load', function () {
 			allowHTML: true,
 			arrow: true,
 			delay: [100, 100],
+			followCursor: true, // tooltip rides along with the mouse
 		});
 	}
 

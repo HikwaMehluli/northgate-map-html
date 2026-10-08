@@ -46,6 +46,22 @@ function findStandElement() {
 	);
 }
 
+// The <g> svg-pan-zoom wraps around the map content at runtime.
+// Its box = the drawing as it looks at the current pan/zoom, so
+// driver.js highlights what you actually see (it re-measures the
+// element itself on every resize/scroll, so nothing else to do).
+function findMapViewport() {
+	const svg = document.querySelector('.map-container > svg');
+	if (!svg) return null;
+	return (
+		svg.querySelector('g[id^="viewport-"]') || // created by svg-pan-zoom
+		svg.querySelector('.svg-pan-zoom_viewport') ||
+		(svg.children.length === 1 && svg.firstElementChild.localName === 'g'
+			? svg.firstElementChild
+			: svg) // last resort: the <svg> box (full map area)
+	);
+}
+
 function pageHasStands() {
 	return Boolean(
 		document.getElementById('residential') || document.querySelector('g[id^="res_"]')
@@ -61,7 +77,7 @@ function restoreLegend() {
 function buildSteps() {
 	const steps = [
 		{
-			element: '.map-container',
+			element: findMapViewport,
 			popover: {
 				title: 'Interactive Map',
 				description:
@@ -88,7 +104,7 @@ function buildSteps() {
 		popover: {
 			title: 'Legend',
 			description:
-				'Colours show stand availability. Use the info button in the controls to hide or show this panel.',
+				'Colours show stand availability. Use the info <span class="icon-info"></span> button in the controls to hide or show this panel.',
 			side: 'top',
 		},
 		onHighlightStarted: function () {

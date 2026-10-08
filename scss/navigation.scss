@@ -218,6 +218,14 @@ body > header {
 		&.drawer__sub--open {
 			transform: translateX(0);
 		}
+
+		// The close (X) reuses .drawer__close styling; scoped here so
+		// it pins to the right of the back row inside the sub menu.
+		.drawer__close {
+			position: absolute;
+			top: 7px;
+			right: 14px;
+		}
 	}
 
 	&.drawer--sub-open .drawer__menu {
@@ -229,7 +237,7 @@ body > header {
 		align-items: center;
 		gap: 10px;
 		width: 100%;
-		padding: 18px 24px;
+		padding: 18px 70px 18px 24px; // right padding keeps room for the X
 		border: none;
 		border-bottom: 1px solid rgba(255, 255, 255, .08);
 		background: transparent;
@@ -254,7 +262,7 @@ body > header {
 		}
 	}
 
-	.drawer__eyebrow {
+	.drawer__title {
 		padding: 20px 24px 8px;
 		margin: 0;
 		font-size: 11px;
@@ -262,6 +270,26 @@ body > header {
 		text-transform: uppercase;
 		letter-spacing: 2px;
 		color: rgba(255, 255, 255, .4);
+	}
+}
+
+// Dimmed backdrop shown while the drawer is open. Sits between the
+// header (25) and the drawer (30); clicking it closes the drawer.
+.drawer-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 28;
+	background: rgba(0, 0, 0, .5);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .35s ease, visibility .35s;
+
+	&.is-visible {
+		opacity: 1;
+		visibility: visible;
 	}
 }
 
