@@ -102,7 +102,7 @@ function buildSteps() {
 	steps.push({
 		element: '#map-legend-panel',
 		popover: {
-			title: 'Legend',
+			title: 'Map Legend',
 			description:
 				'Colours show stand availability. Use the info <span class="icon-info"></span> button in the controls to hide or show this panel.',
 			side: 'top',

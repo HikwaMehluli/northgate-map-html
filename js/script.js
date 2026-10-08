@@ -1,4 +1,5 @@
 import tippy, { followCursor } from 'tippy.js';
+import 'tippy.js/dist/border.css';
 import MicroModal from 'micromodal';
 import svgPanZoom from './svg-pan-zoom.min.js';
 import './hammer.js';
@@ -64,6 +65,7 @@ window.addEventListener('load', function () {
 			delay: [100, 100],
 			followCursor: true, // tooltip rides along with the mouse
 			plugins: [followCursor], // tippy v6 only runs plugins you register
+			theme: 'bordered', // 1px outline (border.css + scss/tippy.scss)
 		});
 	}
 
