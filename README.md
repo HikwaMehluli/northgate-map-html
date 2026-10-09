@@ -30,11 +30,15 @@ import './hammer.js';
 
 ## Sections Overlay Map
 
-`phase-one-overlay.html` shows the Phase One stands with the 5 section shapes layered on top (50% opacity, 100% on hover; click a section to open its page). Both the page and `SVG/phase-one-sections-overlay.svg` are generated from `SVG/phase-one.svg` + `SVG/phase-one-sections.svg`:
+`phase-one-overlay.html` shows the Phase One stands with the 5 section shapes layered on top (50% opacity, 100% on hover; section name labels stay fully opaque in a top layer; click a section to open its page). Both the page and `SVG/phase-one-sections-overlay.svg` are generated from `SVG/phase-one.svg` + `SVG/phase-one-sections.svg`:
 
 ```
 node build-overlay.js
 ```
+
+## Style Guide
+
+`style-guide.html` is a dev reference for the map UI/UX — a Colour Guide (swatches read live from the `:root` CSS variables, each showing its SVG class and copying its hex on click) and the Core JS modules (tippy.js, micromodal, svg-pan-zoom/hammer, driver.js) with docs links. Linked from the navigation drawer.
 
 ## Development Dependencies
 #### Install SASS, Webpack & Webpack CLI

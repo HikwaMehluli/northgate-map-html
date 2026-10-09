@@ -7,6 +7,17 @@ import initNavigation from './navigation.js';
 import initTour from './tour.js';
 
 // ------------------------------------------------------------
+// Console branding
+// ------------------------------------------------------------
+console.log(
+	'%cInteractive Map Demo\n%cby %cMehluli Hikwa',
+	'font-size: 32px; font-weight: 700; color: #1b3664;',
+	'font-size: 15px; color: #222222;',
+	'font-size: 15px; color: #13a0ca; text-decoration: underline; cursor: pointer;'
+);
+console.log('https://thatafro.netlify.app/');
+
+// ------------------------------------------------------------
 // Anti-inspection guard (deterrent only — never trust client-side
 // protection to actually hide code from a determined user).
 // ------------------------------------------------------------

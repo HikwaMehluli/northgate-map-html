@@ -127,18 +127,22 @@ svg {
 	stroke: var(--bg-black);
 }
 
-.sections-overlay .section {
+// Only the shape fades; the name labels sit in their own top layer and
+// stay fully opaque.
+.section__shape {
 	opacity: .5;
+	stroke: var(--bg-black);
+	stroke-dasharray: 0;
 	transition: var(--transition);
 
-	&:hover {
+	.section:hover & {
 		opacity: 1;
 	}
 }
 
-.section__shape {
-	stroke: var(--bg-black);
-	stroke-dasharray: 0;
+// Names are display-only: never block clicks on the shapes below.
+.sections-labels {
+	pointer-events: none;
 }
 
 .section--a .section__shape { fill: var(--bg-section-a); }
