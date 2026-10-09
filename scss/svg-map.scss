@@ -120,6 +120,33 @@ svg {
 	}
 }
 
+// Sections overlay page: neutral stands under 50% section shapes that
+// turn fully opaque on hover (cursor comes from g[data-href]).
+.stands-layer [id="bg"] {
+	fill: var(--bg-stands);
+	stroke: var(--bg-black);
+}
+
+.sections-overlay .section {
+	opacity: .5;
+	transition: var(--transition);
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.section__shape {
+	stroke: var(--bg-black);
+	stroke-dasharray: 0;
+}
+
+.section--a .section__shape { fill: var(--bg-section-a); }
+.section--b .section__shape { fill: var(--bg-section-b); }
+.section--c .section__shape { fill: var(--bg-section-c); }
+.section--d .section__shape { fill: var(--bg-section-d); }
+.section--e .section__shape { fill: var(--bg-section-e); }
+
 .available {
 	fill: var(--bg-available);
 }

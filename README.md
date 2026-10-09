@@ -28,6 +28,14 @@ import svgPanZoom from'./svg-pan-zoom.min.js';
 import './hammer.js';
 ```
 
+## Sections Overlay Map
+
+`phase-one-overlay.html` shows the Phase One stands with the 5 section shapes layered on top (50% opacity, 100% on hover; click a section to open its page). Both the page and `SVG/phase-one-sections-overlay.svg` are generated from `SVG/phase-one.svg` + `SVG/phase-one-sections.svg`:
+
+```
+node build-overlay.js
+```
+
 ## Development Dependencies
 #### Install SASS, Webpack & Webpack CLI
 

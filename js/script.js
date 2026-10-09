@@ -213,6 +213,7 @@ window.addEventListener('load', function () {
 	// Empty = default fit/contain/center.
 	const mapViewConfig = {
 		'northgate-map-phase-one': {},
+		'northgate-map-phase-one-overlay': {},
 		'northgate-map-phase-two': {},
 		'northgate-map-all': {},
 		'phase-one-section-a': {},
